@@ -1,0 +1,796 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+
+  
+  <title>Mexii&#39;s Learning Notes</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta property="og:type" content="website">
+<meta property="og:title" content="Mexii&#39;s Learning Notes">
+<meta property="og:url" content="https://weremexii.github.io/index.html">
+<meta property="og:site_name" content="Mexii&#39;s Learning Notes">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:author" content="weremexii">
+<meta name="twitter:card" content="summary">
+  
+    <link rel="alternate" href="/atom.xml" title="Mexii&#39;s Learning Notes" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+<meta name="generator" content="Hexo 4.2.0"></head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Mexii&#39;s Learning Notes</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="搜索"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="https://weremexii.github.io"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main">
+  
+    <article id="post-tryfusion12" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2020/09/tryfusion12/" class="article-date">
+  <time datetime="2020-09-16T13:51:21.000Z" itemprop="datePublished">2020-09-16</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2020/09/tryfusion12/">Fusion 12 获取序列号</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>在macOS上使用虚拟机软件，不外乎是Parallels，Fusion或者VisualBox。Paralles以流畅到极致的Windows体验著称，但虚拟的其他系统体验却相形见绌。VisualBox则被称为虚拟拖拉机，体验可见一斑（然而博主却在类似MuMu模拟器之类的Android虚拟机软件中看到VisualBox）。虚拟Linux系系统就选Fusion了。</p>
+<p>碰巧的是，vmware在8月<a href="https://blogs.vmware.com/teamfusion/2020/08/announcing-fusion-12-and-workstation-16.html" target="_blank" rel="noopener">发布Fusion 12</a>，并更新它的授权体系，允许免费的个人使用。这意味这博主不再需要cracked version啦，可以名正言顺地白嫖啦。</p>
+<p>PS:发布博文后，过了大概半个月才给出<a href="https://my.vmware.com/web/vmware/downloads/info/slug/desktop_end_user_computing/vmware_fusion/12_0" target="_blank" rel="noopener">下载地址</a>。</p>
+<p>正文开始</p>
+<h3 id="获取序列号"><a href="#获取序列号" class="headerlink" title="获取序列号"></a>获取序列号</h3><p>即便vmware放出个人版免费使用，也逃不了注册账户才能获得软件使用的序列号（安装的fusion 12有试用期，必须输入序列号才能解除试用）。值得注意的是，vmware的产品授权有着类似于AppStore的地区区别（国区美区这样的）。仔细来讲，一个账户可以拥有同时不同地区同一个软件的授权，地区看的是你登录vmware时的IP地址。</p>
+<p>博主在这里被坑了一波，我默认的代理节点为香港，通过代理登录vmware账户，点击<code>上述</code>下载页面的<code>Get Your License Key</code>再点击<code>My VMware License Key</code>，会跳转到vSphere Hypervisor的授权界面。几番尝试，博主关掉代理重新登录（建议退出登录后清除cookie再登录）,重复上述操作，跳转到了404。看来不同地区优惠不一样啊，抱着这样的想法，博主挂上了美国的代理。</p>
+<p>当然，在美国代理下上上述操作也不一定能拿到序列号，毕竟你并没有拿过序列号，My License Key中不一定会有。所幸博主在一个<a href="https://www.macrumors.com/2020/09/15/vmware-fusion-12-available/" target="_blank" rel="noopener">新闻页面</a>找到了Fusion 12的<a href="https://my.vmware.com/web/vmware/evalcenter?p=fusion-player-personal" target="_blank" rel="noopener">授权地址</a>（类似于上述的那个vSphere Hypervisor），点击Registrate，获得序列号（请全程美国代理）。</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://weremexii.github.io/2020/09/tryfusion12/" data-id="ckf5jhpu3000d4e60c1peakvg" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Fusion/" rel="tag">Fusion</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-生物—-选修一" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2020/04/%E7%94%9F%E7%89%A9%E2%80%94-%E9%80%89%E4%BF%AE%E4%B8%80/" class="article-date">
+  <time datetime="2020-04-03T23:52:28.000Z" itemprop="datePublished">2020-04-04</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2020/04/%E7%94%9F%E7%89%A9%E2%80%94-%E9%80%89%E4%BF%AE%E4%B8%80/">生物—_选修一</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h3 id="专题一-传统发酵技术的应用"><a href="#专题一-传统发酵技术的应用" class="headerlink" title="专题一 传统发酵技术的应用"></a>专题一 传统发酵技术的应用</h3><h4 id="课题一-果酒和果醋的制作"><a href="#课题一-果酒和果醋的制作" class="headerlink" title="课题一 果酒和果醋的制作"></a><strong>课题一</strong> <strong>果酒和果醋的制作</strong></h4><p>1、发酵：通过微生物技术的培养来生产大量代谢产物的过程。</p>
+<p>2、有氧发酵：醋酸发酵 谷氨酸发酵 ·无氧发酵：酒精发酵 乳酸发酵 </p>
+<p>3、<strong>酵母菌是兼性厌氧菌型微生物真菌</strong> ·酵母菌的生殖方式：<strong>出芽生殖</strong>(主要) 分裂生殖 孢子生殖</p>
+<p>4、在有氧条件下，酵母菌进行有氧呼吸，大量<strong>繁殖</strong>。  </p>
+<p><img src="https://raw.githubusercontent.com/weremexii/imgformarkdown/master/typora/202004/04/075457-698691.png" alt="1585958096996"></p>
+<p>5、在无氧条件下，酵母菌能进行<strong>酒精发酵</strong>。        </p>
+<p><img src="https://raw.githubusercontent.com/weremexii/imgformarkdown/master/typora/202004/04/075516-159358.png" alt="1585958115037"></p>
+<p>6、<strong>20℃</strong>左右最适宜酵母菌繁殖 酒精发酵时一般将温度控制在<strong>18℃-25℃</strong> </p>
+<p>7、在葡萄酒自然发酵的过程中,起主要作用的是附着在葡萄皮表面的<strong>野生型酵母菌</strong>.在发酵过程中,随着酒精浓度的提高,红葡萄皮的色素也进入发酵液,使葡萄酒呈现<strong>深红色</strong>.在<strong>缺氧，呈酸性</strong>的发酵液中，酵母菌可以生长繁殖，而绝大多数其他微生物都因无法适应这一环境而受到制约。</p>
+<p>8、<strong>醋酸菌是单细胞细菌</strong>(<strong>原核生物</strong>),代谢类型是<strong>异养需氧型</strong>,生殖方式为<strong>二分裂</strong></p>
+<p>9、<strong>当氧气、糖源都充足时，醋酸菌将葡萄汁中的糖分解成醋酸；当缺少糖源时，醋酸菌将乙醇变为乙醛，再将乙醛变为醋酸</strong>。   </p>
+<p><img src="https://raw.githubusercontent.com/weremexii/imgformarkdown/master/typora/202004/04/075538-942317.png" alt="1585958135773"></p>
+<p>10、控制发酵条件的作用①醋酸菌对氧气的含量特别敏感，当进行深层发酵时，即使只是短时间中断通入氧气，也会引起醋酸菌死亡。②醋酸菌最适生长温度为<strong>30~35℃(32℃)</strong>，控制好发酵温度，使发酵时间缩短，又减少杂菌污染的机会。③有两条途径生成醋酸：直接氧化和以酒精为底物的氧化。</p>
+<p>11、实验流程：挑选葡萄→冲洗→榨汁→酒精发酵→果酒（→醋酸发酵→果醋）</p>
+<p>12、酒精检验：果汁发酵后是否有酒精产生，可以用<strong>重铬酸钾</strong>来检验。在酸性条件下，重铬酸钾与酒精反应呈现<strong>灰绿色</strong>。先在试管中加入发酵液2ｍL，再滴入物质的量浓度为3mol/L的<strong>H</strong>2SO43滴，振荡混匀，最后滴加常温下饱和的重铬酸钾溶液3滴，振荡试管，观察颜色</p>
+<p>13、充气口是在醋酸发酵时连接充气泵进行充气用的；排气口是在酒精发酵时用来排出二氧化碳的；出料口是用来取样的。排气口要通过一个长而弯曲的胶管与瓶身相连接，其目的是防止空气中微生物的污染。开口向下的目的是有利于二氧化碳的排出。使用该装置制酒时，应该关闭充气口；制醋时，应该充气口连接气泵，输入氧气。</p>
+<p><img src="https://raw.githubusercontent.com/weremexii/imgformarkdown/master/typora/202004/04/075819-446246.png" alt="1585958298041"></p>
+<p>疑难解答</p>
+<p>（1）你认为应该先冲洗葡萄还是先除去枝梗？为什么？</p>
+<p>应该先冲洗，然后再除去枝梗，以避免除去枝梗时引起葡萄破损，增加被杂菌污染的机会。</p>
+<p>（2）你认为应该从哪些方面防止发酵液被污染？</p>
+<p>如：要先冲洗葡萄，再除去枝梗；榨汁机、发酵装置要清洗干净，并进行酒精消毒；每次排气时只需拧松瓶盖，不要完全揭开瓶盖等。</p>
+<p>（3）制葡萄酒时，为什么要将温度控制在18～25℃？制葡萄醋时，为什么要将温度控制在30～35℃？</p>
+<p>温度是酵母菌生长和发酵的重要条件。20℃左右最适合酵母菌的繁殖。因此需要将温度控制在其最适温度范围内。而醋酸菌是嗜温菌，最适生长温度为32℃，因此要将温度控制在30～35℃。</p>
+<h4 id="课题二-腐乳的制作"><a href="#课题二-腐乳的制作" class="headerlink" title="课题二 腐乳的制作"></a><strong>课题二 腐乳的制作</strong></h4><p>1、多种微生物参与了豆腐的发酵，如<strong>青霉、酵母、曲霉、毛霉</strong>等，其中起主要作用的是<strong>毛霉</strong>。毛霉是一种<strong>丝状真菌</strong>。代谢类型是<strong>异养需氧型</strong>。生殖方式是<strong>孢子生殖</strong>。营<strong>腐生生活</strong>。</p>
+<p>2、原理：毛霉等微生物产生的<strong>蛋白酶能将豆腐中的蛋白质分解成小分子的肽和氨基酸</strong>；<strong>脂肪酶可将脂肪水解为甘油和脂肪酸。</strong></p>
+<p>3、实验流程：让豆腐上长出毛霉→加盐腌制→加卤汤装瓶→密封腌制</p>
+<p>4、酿造腐乳的主要生产工序是将豆腐进行前期发酵和后期发酵。</p>
+<p>前期发酵的主要作用：1.创造条件让毛霉生长。2.使毛霉形成菌膜包住豆腐使腐乳成型。</p>
+<p>后期发酵主要是酶与微生物协同参与生化反应的过程。通过各种辅料与酶的缓解作用，生成腐乳的香气。</p>
+<p>5、将豆腐切成3cm×3cm×1cm的若干块。所用豆腐的含水量为<strong>70％</strong>左右，水分过多则腐乳不易成形。*水分测定方法如下：精确称取经研钵研磨成糊状的样品5～10g(精确到0.02mg)，置于已知重量的蒸发皿中，均匀摊平后，在100～105℃电热干燥箱内干燥4h，取出后置于干燥器内冷却至室温后称重，然后再烘30min，直至所称重量不变为止。</p>
+<p>样品水分含量（%）计算公式如下：</p>
+<p>(烘干前容器和样品质量-烘干后容器和样品质量)/烘干前样品质量</p>
+<p>·毛霉的生长：条件:将豆腐块平放在笼屉内，将笼屉中的控制在15～18℃，并保持一定的湿度。</p>
+<p>来源：1.<strong>来自空气中的毛霉孢子</strong>，2. <strong>直接接种优良毛霉菌种</strong></p>
+<p>时间：5天</p>
+<p>·加盐腌制：将长满毛霉的豆腐块分层整齐地摆放在瓶中，同时逐层加盐，随着层数的加高而增加盐量，接近瓶口表面的盐要铺厚一些。加盐腌制的时间约为8天左右。</p>
+<p>·用盐腌制时，注意控制盐的用量：盐的浓度过低，不足以抑制微生物的生长，可能导致豆腐腐败变质；盐的浓度过高会影响腐乳的口味</p>
+<p><strong>·食盐的作用</strong>：<strong>1.抑制微生物的生长，避免腐败变质2.析出水分，使豆腐变硬，在后期制作过程中不易酥烂3.调味作用，给腐乳以必要的咸味4.浸提毛酶菌丝上的蛋白酶。</strong></p>
+<p>·配制卤汤：卤汤直接关系到腐乳的色、香、味。卤汤是由酒及各种香辛料配制而成的。<strong>卤汤中酒的含量一般控制在12%左右。</strong></p>
+<p>·<strong>酒的作用：1.防止杂菌污染以防腐2.与有机酸结合形成酯，赋予腐乳风味3.酒精含量的高低与腐乳后期发酵时间的长短有很大关系，**</strong>酒精含量越高，对蛋白酶的抑制作用也越大，使腐乳成熟期延长；酒精含量过低，蛋白酶的活性高，加快蛋白质的水解，杂菌繁殖快，豆腐易腐败，难以成块。**</p>
+<p>·香辛料的作用：1.调味作用2.杀菌防腐作用3.参与并促进发酵过程</p>
+<p>·防止杂菌污染：①用来腌制腐乳的玻璃瓶，洗刷干净后要用沸水消毒。②装瓶时，操作要迅速小心。整齐地摆放好豆腐、加入卤汤后，要用胶条将瓶口密封。<strong>封瓶时，最好将瓶口通过酒精灯的火焰，防止瓶口被污染。</strong></p>
+<p>疑难解答</p>
+<p>（1）利用所学的生物学知识，解释豆腐长白毛是怎么一回事？</p>
+<p>豆腐生长的白毛是毛霉的白色菌丝。严格地说是<strong>直立菌丝</strong>，在豆腐中还有<strong>匍匐菌丝</strong>。</p>
+<p>（2）为什么要撒许多盐，将长毛的豆腐腌起来？</p>
+<p>盐能防止杂菌污染，避免豆腐腐败。</p>
+<p>（3）我们平常吃的豆腐，哪种适合用来做腐乳？</p>
+<p><strong>含水量为70%左右</strong>的豆腐适于作腐乳。用含水量高的豆腐制作腐乳，不易成形。</p>
+<p>（4）吃腐乳时，你会发现腐乳外部有一层致密的“皮”。这层“皮”是怎样形成的呢？它对人体有害吗？它的作用是什么？</p>
+<p><strong>“皮”是前期发酵时在豆腐表面上生长的菌丝（匍匐菌丝），对人体无害。它能形成腐乳的“体”，使腐乳成形</strong>。</p>
+<h4 id="课题三-制作泡菜"><a href="#课题三-制作泡菜" class="headerlink" title="课题三 制作泡菜"></a><strong>课题三 制作泡菜</strong></h4><p>·制作泡菜所用微生物是<strong>乳酸菌</strong> ，其代谢类型是<strong>异养厌氧型</strong>。在无氧条件下，<strong>将糖分解为乳酸</strong> 。<strong>分裂方式是二分裂</strong>。反应式为：</p>
+<p><img src="https://raw.githubusercontent.com/weremexii/imgformarkdown/master/typora/202004/04/080021-887382.png" alt="1585958407705"></p>
+<p>含抗生素牛奶不能生产酸奶的原因是抗生素杀死乳酸菌。常见的乳酸菌有<strong>乳酸链球菌和乳酸杆菌</strong>。乳酸杆菌常用于生产酸奶。</p>
+<p>·亚硝酸盐为白色粉末，易溶于水，在食品生产中用作食品添加剂。</p>
+<p>·膳食中的亚硝酸盐一般不会危害人体健康，国家规定肉制品中不超过30mg/kg，酱腌菜中不超过20mg/kg，婴儿奶粉中不超过2mg/kg。亚硝酸盐被吸收后随尿液排出体外，但在适宜pH 、温度和一定微生物作用下形成致癌物质<strong>亚硝胺</strong>。</p>
+<p>一般在腌制 <strong>10</strong> <strong>天</strong>后亚硝酸盐含量开始降低，故在10天之后食用最好</p>
+<p>测定亚硝酸盐含量的方法是：<strong>比色法</strong></p>
+<p>原理是在<strong>盐酸酸化条件下</strong>，亚硝酸盐与<strong>对基苯磺酸</strong>发生<strong>重氮化反应</strong>后，与 <strong>N-1-**</strong>萘基乙二胺盐酸盐<strong>结合形成</strong>玫瑰红色染料<strong>，与已知浓度的标准显色液目测比较，</strong>估算**泡菜中亚硝酸盐含量。</p>
+<p><img src="https://raw.githubusercontent.com/weremexii/imgformarkdown/master/typora/202004/04/080140-665598.png" alt="1585958499154"></p>
+<h4 id="专题二-微生物的培养与应用"><a href="#专题二-微生物的培养与应用" class="headerlink" title="专题二 微生物的培养与应用"></a>专题二 微生物的培养与应用</h4><h5 id="课题一-微生物的实验室培养"><a href="#课题一-微生物的实验室培养" class="headerlink" title="课题一 微生物的实验室培养"></a>课题一 微生物的实验室培养</h5><p>·培养基：人们按照微生物对营养物质的不同需求，配制出供其生长繁殖的营养基质，是进行微生物培养的物质基础。</p>
+<p>·培养基按照<strong>物理性质</strong>可分为<strong>液体培养基</strong> <strong>半固体培养基</strong>和<strong>固体培养基</strong>。在液体培养基中加入凝固剂<strong>琼脂</strong>（是从红藻中提取的一种多糖，在配制培养基中用作凝固剂）后，制成琼脂固体培养基。微生物在固体培养基表面生长，可以形成肉眼可见的菌落。<strong>根据菌落的特征可以判断是哪一种菌</strong>。<strong>液体培养基</strong>应用于工业或生活生产，<strong>固体培养基</strong>应用于微生物的分离和鉴定，<strong>半固体培养基</strong>则常用于观察微生物的运动及菌种保藏等。</p>
+<p>·按照<strong>成分</strong>培养基可分为<strong>人工合成培养基</strong>和<strong>天然培养基</strong>。<strong>合成培养基</strong>是用成分已知的化学物质配制而成，其中成分的种类比例明确，常用于微生物的分离鉴定。<strong>天然培养基</strong>是用化学成分不明的天然物质配制而成，常用于实际工业生产。</p>
+<p>·按照培养基的<strong>用途</strong>，可将培养基分为<strong>选择培养基</strong>和<strong>鉴定培养基</strong>。<strong>选择培养基</strong>是指在培养基中加入某种化学物质，以抑制不需要的微生物生长，促进所需要的微生物的生长。<strong>鉴别培养基</strong>是根据微生物的特点，在培养基中加入某种指示剂或化学药品配制而成的，用以鉴别不同类别的微生物。</p>
+<p>·培养基的化学成分包括 <strong>水</strong> 、 <strong>无机盐</strong> 、 <strong>碳源</strong> 、 <strong>氮源</strong> （<strong>生长因子）</strong>等。</p>
+<p>·碳源：能为微生物的代谢提供碳元素的物质。如CO2、NaHCO3等无机碳源；糖类、石油、花生粉饼等有机碳源。异养微生物只能利用有机碳源。<strong>单质碳不能作为碳源</strong>。</p>
+<p>·氮源：能为微生物的代谢提供氮元素的物质。如N2、NH3、NO3-、NH4+（无机氮源）蛋白质、氨基酸、尿素、牛肉膏、蛋白胨（有机氮源）等。<strong>只有固氮微生物才能利用N**</strong>2**。</p>
+<p>·培养基还要满足微生物生长对PH、特殊营养物质以及氧气的要求。例如，培养<strong>乳酸杆菌</strong>时需要在培养基中添加<strong>维生素</strong>，培养<strong>霉菌</strong>时须将培养基的pH调至<strong>酸性</strong>，培养<strong>细菌</strong>是需要将pH调至<strong>中性或微碱性</strong>，培养<strong>厌氧型微生物</strong>是则需要提供<strong>无氧</strong>的条件</p>
+<p>·<strong>无菌技术</strong>·获得纯净培养物的关键是防止外来杂菌的入侵，要注意以下几个方面：</p>
+<p>①对实验操作的空间、操作者的衣着和手，进行清洁和<strong>消毒</strong>。</p>
+<p>②将用于微生物培养的器皿、接种用具和培养基等器具进行<strong>灭菌</strong>。</p>
+<p>③为避免周围环境中微生物的污染，实验操作应在<strong>酒精灯火焰</strong>附近进行。</p>
+<p>④实验操作时应<strong>避免已经灭菌处理的材料用具与周围的物品相接触</strong>。</p>
+<p>无菌技术除了用来防止实验室的培养物被其他外来微生物污染外，还有什么目的？</p>
+<p>答：无菌技术还能有效避免操作者自身被微生物感染。</p>
+<p>·消毒与灭菌的区别</p>
+<p><strong>消毒</strong>指使用较为温和的物理或化学方法仅杀死物体表面或内部一部分对人体有害的微生物（不包括芽孢和孢子）。消毒方法常用<strong>煮沸消毒法</strong>，<strong>巴氏消毒法</strong>（对于一些不耐高温的液体）还有<strong>化学药剂</strong>（如酒精、氯气、石炭酸等）消毒、<strong>紫外线消毒</strong>。</p>
+<p><strong>灭菌</strong>则是指使用强烈的理化因素杀死物体内外所有的微生物，包括芽孢和孢子。灭菌方法有<strong>灼烧灭菌</strong>、<strong>干热灭菌</strong>、<strong>高压蒸汽灭菌</strong>。</p>
+<p>灭菌方法：</p>
+<p>①接种环、接种针、试管口等使用灼烧灭菌法；</p>
+<p>②玻璃器皿、金属用具等使用干热灭菌法，所用器械是干热灭菌箱 ；</p>
+<p>③<strong>培养基、无菌水等使用高压蒸汽灭菌法</strong>，所用器械是高压蒸汽灭菌锅 。</p>
+<p>④表面灭菌和空气灭菌等使用紫外线灭菌法，所用器械是紫外灯。</p>
+<table>
+<thead>
+<tr>
+<th>比较项</th>
+<th>理化因素的作用强度</th>
+<th>消灭微生物的数量</th>
+<th>芽孢和孢子能否被消灭</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>消毒</td>
+<td>较为温和</td>
+<td>部分生活状态的微生物</td>
+<td>不能</td>
+</tr>
+<tr>
+<td>灭菌</td>
+<td>强烈</td>
+<td>全部微生物</td>
+<td>能</td>
+</tr>
+</tbody></table>
+<p>制作牛肉膏蛋白胨固体培养基</p>
+<p>（1）方法步骤：计算、称量、溶化、<strong>灭菌、倒平板</strong>。</p>
+<p>（2）倒平板操作的步骤：</p>
+<p>①将灭过菌的培养皿放在火焰旁的桌面上，右手拿装有培养基的锥形瓶，左手拔出棉塞。</p>
+<p>②右手拿锥形瓶，将瓶口迅速通过火焰。</p>
+<p>③用左手的拇指和食指将培养皿打开一条稍大于瓶口的缝隙，右手将锥形瓶中的培养基（约10～20mL）倒入培养皿，左手立即盖上培养皿的皿盖。</p>
+<p>④等待平板冷却凝固，大约需<strong>5～10min</strong>。然后，将平板<strong>倒过来放置</strong>，使培养皿盖在下、皿底在上。</p>
+<p>·倒平板操作的讨论</p>
+<p>1.培养基灭菌后，需要冷却到<strong>50**</strong>℃**左右时，才能用来倒平板。你用什么办法来估计培养基的温度？</p>
+<p>提示：可以用手触摸盛有培养基的锥形瓶，感觉锥形瓶的温度下降到刚刚<strong>不烫手</strong>时，就可以进行倒平板了。</p>
+<p>2.为什么需要使锥形瓶的瓶口通过火焰？</p>
+<p>答：通过灼烧灭菌，防止瓶口的微生物污染培养基。</p>
+<p>3.平板冷凝后，为什么要将平板倒置？</p>
+<p>答：<strong>平板冷凝后，皿盖上会凝结水珠，将平板倒置，既可以使培养基表面的水分更好地挥发，又可以防止皿盖上的水珠落入培养基，造成污染</strong>。</p>
+<p>4.在倒平板的过程中，如果不小心将培养基溅在皿盖与皿底之间的部位，这个平板还能用来培养微生物吗？为什么？</p>
+<p>答：空气中的微生物可能在皿盖与皿底之间的培养基上滋生，因此最好不要用这个平板培养微生物。</p>
+<p>纯化大肠杆菌</p>
+<p>（1）微生物接种的方法最常用的是<strong>平板划线法</strong>和<strong>稀释涂布平板法</strong>。</p>
+<p>（2）平板划线法是通过接种环在琼脂固体培养基表面连续划线的操作。将聚集的菌种<strong>逐步稀释</strong>分散到培养基的表面。在数次划线后培养，可以分离到由<strong>一个细胞</strong>繁殖而来的肉眼可见的子细胞群体，这就是菌落。</p>
+<p>（3）稀释涂布平板法是将菌液进行一系列的梯度稀释，然后将不同稀释度的菌液分别涂布到琼脂固体培养基的表面，进行培养。分为系列<strong>稀释操作</strong>和<strong>涂布平板操作</strong>两步。</p>
+<p>（4）用平板划线法和稀释涂布平板法接种的<strong>目的</strong>是：<strong>使聚集在一起的微生物分散成单个细胞，从而能在培养基表面形成单个的菌落，以便于纯化菌种。</strong></p>
+<p>（5）平板划线法操作步骤：</p>
+<p>①将接种环放在火焰上灼烧，直到接种环烧红。②在火焰旁冷却接种环，并打开棉塞。</p>
+<p>③将试管口通过火焰。④将已冷却的接种环伸入菌液中蘸取一环菌液。</p>
+<p>⑤将试管通过火焰，并塞上棉塞。⑥左手将皿盖打开一条缝隙，右手将沾有菌种的接种环迅速伸入平板内，划三至五条平行线，盖上皿盖。注意不要划破培养皿。⑦灼烧接种环，待其冷却后，从第一区域划线的末端开始往第二区域内划线。重复以上操作，在三、四、五区域内划线。注意不要将最后一区的划线与第一区相连。⑧将平板倒置放入培养箱中培养。</p>
+<p>·平板划线操作的讨论</p>
+<p>1.为什么在操作的第一步以及每次划线之前都要灼烧接种环？在划线操作结束时，仍然需要灼烧接种环吗？为什么？</p>
+<p>答：<strong>操作的第一步灼烧接种环是为了避免接种环上可能存在的微生物污染培养物；每次划线前灼烧接种环是为了杀死上次划线结束后，接种环上残留的菌种，使下一次划线时，接种环上的菌种直接来源于上次划线的末端，从而通过划线次数的增加，使每次划线时菌种的数目逐渐减少，以便得到菌落。划线结束后灼烧接种环，能及时杀死接种环上残留的菌种，避免细菌污染环境和感染操作者。</strong></p>
+<p>2.在灼烧接种环之后，为什么要等其冷却后再进行划线？</p>
+<p>答：以免接种环温度太高，杀死菌种。</p>
+<p>3.在作第二次以及其后的划线操作时，为什么总是从上一次划线的末端开始划线？</p>
+<p>答：<strong>划线后，线条末端细菌的数目比线条起始处要少，每次从上一次划线的末端开始，能使细菌的数目随着划线次数的增加而逐步减少，最终能得到由单个细菌繁殖而来的菌落。</strong></p>
+<p>（6）涂布平板操作的步骤：</p>
+<p>①将涂布器浸在盛有酒精的烧杯中。②取少量菌液，滴加到培养基表面。</p>
+<p>③将沾有少量酒精的涂布器在火焰上引燃，待酒精燃尽后，冷却8～10s。</p>
+<p>④用涂布器将菌液均匀地涂布在培养基表面。</p>
+<p>涂布平板操作的讨论</p>
+<p>涂布平板的所有操作都应在火焰附近进行。结合平板划线与系列稀释的无菌操作要求，想一想，第2步应如何进行无菌操作？</p>
+<p>提示：应从操作的各个细节保证“无菌”。例如，酒精灯与培养皿的距离要合适、吸管头不要接触任何其他物体、吸管要在酒精灯火焰周围；等等。</p>
+<p>菌种的保存</p>
+<p>（1）对于频繁使用的菌种，可以采用<strong>临时保藏</strong>的方法。</p>
+<p>①临时保藏方法</p>
+<p>将菌种接种到试管的固体斜面培养基上，在合适的温度下培养。当菌落长成后，将试管放入<strong>4℃</strong>的冰箱中保藏。以后每3～6个月，都要重新将菌种从旧的培养基上转移到新鲜的培养基上。</p>
+<p>②<strong>缺点</strong>：这种方法保存的时间不长，菌种容易被污染或产生变异。</p>
+<p>（2）对于需要长期保存的菌种，可以采用<strong>甘油管藏</strong>的方法。</p>
+<p>在3mL的甘油瓶中，装入1mL甘油后灭菌。将1mL培养的菌液转移到甘油瓶中，与甘油充分混匀后，放在<strong>－20℃</strong>的冷冻箱中保存。</p>
+<p>确定培养基制作是否合格的方法：将未接种的培养基在恒温箱中保温1～2天，无菌落生长，说明培养基的制备是成功的，否则需要重新制备。</p>
+<h5 id="课题二-土壤中分解尿素的细菌的分离与计数"><a href="#课题二-土壤中分解尿素的细菌的分离与计数" class="headerlink" title="课题二 土壤中分解尿素的细菌的分离与计数"></a>课题二 土壤中分解尿素的细菌的分离与计数</h5><p><strong>尿素</strong>      是一种重要的农业氮肥，尿素并不能直接被农作物吸收。只有当土壤中的细菌将尿素分解成<strong>氨</strong>之后，才能被植物利用。土壤中的细菌之所以能分解尿素，是因为他们能合成<strong>脲酶</strong></p>
+<p>​    筛选菌株</p>
+<p>（1）实验室中微生物的筛选应用的原理</p>
+<p>人为提供有利于目的菌株生长的条件（包括营养、温度、pH等），同时抑制或阻止其他微生物生长。</p>
+<p>（2）选择性培养基</p>
+<p>在微生物学中，将允许特定种类的微生物生长，同时抑制或阻止其他种类微生物生长的培养基，称作<strong>选择培养基</strong>。</p>
+<p>（3）配制选择培养基的依据</p>
+<p>根据选择培养的菌种的生理代谢特点加入某种物质以达到选择的目的。例如，<strong>培养基中不加入有机物可以选择培养自养微生物；培养基中不加入氮元素，可以选择培养能固氮的微生物；加入高浓度的食盐可选择培养金黄色葡萄球菌等。</strong></p>
+<p>统计菌落数目</p>
+<p>（1）测定微生物数量的常用方法有<strong>稀释涂布平板法</strong>和<strong>显微镜直接计数</strong>。</p>
+<p>（2）稀释涂布平板法统计样品中活菌的数目的原理</p>
+<p>当样品的稀释度足够高时，培养基表面生长的一个菌落，来源于样品稀释液中的一个活菌。通过统计平板上的菌落数，就能推测出样品中大约含有多少<strong>活细菌</strong>。为了保证结果准确，一般设置<strong>3**</strong>～5<strong>个平板，选择菌落数在</strong>30<strong><strong>～300</strong></strong>之间<strong>的平板进行计数，并</strong>取平均值<strong>。</strong>统计的菌落数往往比活菌的实际数目低**，因此，统计结果一般用菌落数而不是活菌数来表示。</p>
+<p>采用此方法的注意事项：1.一般选取菌落数在30~300之间的平板进行计数</p>
+<p>2.为了防止菌落蔓延，影响计数，可在培养基中加入TTC（在计数琼脂中加入适量的TTC(0.5% TTC 1ML加到100ML琼脂中),细菌菌落长成红颜色,对去除食品本底颗粒物干扰非常有意义）.</p>
+<p>3.本法仅限于形成菌落的微生物</p>
+<p>设置对照</p>
+<p>设置对照的主要目的是排除实验组中非测试因素对实验结果的影响，提高实验结果的可信度。对照实验是指除了被测试的条件以外，其他条件都相同的实验，其作用是比照试验组，排除任何其他可能原因的干扰，证明确实是所测试的条件引起相应的结果。</p>
+<p>实验设计</p>
+<p>实验设计包括实验方案，所需仪器、材料、用具和药品，具体的实施步骤以及时间安排等的综合考虑和安排。</p>
+<p>（1）土壤取样：同其他生物环境相比，土壤中的微生物，数量最大，种类最多。在富含有机质的土壤表层，有更多的微生物生长。从富含有机物、潮湿、pH≈7的土壤中取样。铲去表层土，在距地表约<strong>3～8cm</strong>的土壤层取样。</p>
+<p>（2）样品的稀释：样品的稀释程度将直接影响平板上生长的菌落数目。在实际操作中，通常选用一定稀释范围的样品液进行培养，以保证获得菌落数在30~300之间、适于计数的平板。</p>
+<p><strong>测定土壤中细菌的数量，一般选用104  105   106</strong></p>
+<p><strong>测定放线菌的数量，一般选用103  104   105</strong></p>
+<p> <strong>测定真菌的数量，一般选用102  103    104</strong></p>
+<p>（3）微生物的培养与观察</p>
+<p>不同种类的微生物，往往需要不同的培养温度和培养时间。<strong>细菌30<del>37℃ 1</del>2天</strong> <strong>放线菌25<del>28℃ 5</del>7天</strong> <strong>霉菌25<del>28℃ 3</del>4天</strong></p>
+<p>每隔<strong>24</strong>小时统计一次菌落数目，选取菌落数目稳定时的记录作为结果，这样可以防止因培养时间不足而导致一楼菌落的数目。一般来说，在一定的培养条件下（相同的培养基、温度及培养时间），同种微生物表现出稳定的菌落特征。形状、大小、隆起程度、颜色</p>
+<p>平板上的菌落数推测每克样品中的菌落：</p>
+<p>统计某一稀释度下平板上的菌落数，最好能统计3个平板，计算出平板菌落数的平均值</p>
+<p>每克样品中的菌落数=（C/V）*M 其中，C代表某一稀释度下平板上生长的平均菌落数，V代表涂布平板时所用的稀释液的体积（ml），M代表稀释倍数</p>
+<h5 id="课题三-分解纤维素的微生物的分离"><a href="#课题三-分解纤维素的微生物的分离" class="headerlink" title="课题三 分解纤维素的微生物的分离"></a>课题三 分解纤维素的微生物的分离</h5><p><strong>纤维素</strong>，一种由<strong>葡萄糖</strong>首尾相连而成的高分子化合物，是地球上含量最丰富的多糖类物质。</p>
+<p>纤维素与纤维素酶</p>
+<p>（1）<strong>棉花</strong>是自然界中纤维素含量最高的天然产物，木材、作物秸秆等也富含纤维素。</p>
+<p>（2）纤维素酶是一种<strong>复合酶</strong>，一般认为它至少包括三种组分，即<strong>C**</strong>1<strong><strong>酶、CX</strong></strong>酶和葡萄糖苷酶<strong>，前两种酶使纤维素分解成</strong>纤维二糖**，第三种酶将纤维二糖分解成葡萄糖。纤维素最终被水解成葡萄糖，为微生物的生长提供营养。</p>
+<p>纤维素分解菌的筛选</p>
+<p>（1）筛选方法：<strong>刚果红染色法</strong>。能够通过颜色反应直接对微生物进行筛选。</p>
+<p>（2）刚果红染色法筛选纤维素分解菌的原理</p>
+<p><strong>刚果红是一种染料，它可以与像纤维素这样的多糖物质形成红色复合物，但并不和水解后的纤维二糖和葡萄糖发生这种反应。</strong>当我们在含有纤维素的培养基中加入刚果红时，刚果红能与培养基中的纤维素形成<strong>红色复合物</strong>。当纤维素被纤维素酶分解后，刚果红－纤维素的复合物就无法形成，培养基中会出现<strong>以纤维素分解菌为中心的透明圈</strong>。这样，我们就可以通过<strong>是否产生透明圈</strong>来筛选纤维素分解菌。</p>
+<p>分离分解纤维素的微生物的实验流程</p>
+<p>土壤取样→选择培养（此步是否需要，应根据样品中目的菌株数量的多少来确定）→梯度稀释→将样品涂布到鉴别纤维素分解菌的培养基上→挑选产生<strong>透明圈</strong>的菌落</p>
+<p>（1）土壤采集  选择<strong>富含纤维素的环境</strong>。</p>
+<p>（2）刚果红染色法分离纤维素分解菌的步骤   倒平板操作、制备菌悬液、涂布平板</p>
+<p>（3）刚果红染色法种类</p>
+<p>一种是先培养微生物，再加入刚果红进行颜色反应，另一种是在倒平板时就加入刚果红。</p>
+<p>对分解纤维素的微生物进行了初步的筛选后，只是分离纯化的第一步，为确定得到的是纤维素分解菌，还需要进行<strong>发酵产纤维素酶的实验</strong>，纤维素酶的发酵方法有<strong>液体发酵</strong>和<strong>固体发酵</strong>两种。纤维素酶的测定方法，一般是对纤维素酶分解滤纸等纤维素后所产生的<strong>葡萄糖进行定量的测定</strong>。</p>
+<p>选择培养能够“浓缩”所需的微生物：<strong>在选择培养的条件下，可以使那些能够适应这种营养条件的微生物得到迅速繁殖，而那些不适应这种营养条件的微生物的繁殖被抑制，因此可以起到“浓缩”的作用</strong>。</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://weremexii.github.io/2020/04/%E7%94%9F%E7%89%A9%E2%80%94-%E9%80%89%E4%BF%AE%E4%B8%80/" data-id="ckf5jhpu1000b4e608o873dtr" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-语文" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2020/04/%E8%AF%AD%E6%96%87/" class="article-date">
+  <time datetime="2020-04-01T00:01:19.000Z" itemprop="datePublished">2020-04-01</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2020/04/%E8%AF%AD%E6%96%87/">语文</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h5 id="冲刺练1-语言文字运用＋名篇名句默写＋论述类文本阅读＋作文"><a href="#冲刺练1-语言文字运用＋名篇名句默写＋论述类文本阅读＋作文" class="headerlink" title="冲刺练1　语言文字运用＋名篇名句默写＋论述类文本阅读＋作文"></a>冲刺练1　语言文字运用＋名篇名句默写＋论述类文本阅读＋作文</h5><p>10．【审题立意】材料列举了四座桥——古代的赵州桥、刚开通的港珠澳大桥、传说中的“鹊桥”以及“一带一路”这一和平友谊桥。作文任务指令明确——以中国代表的身份，在一次模拟联合国大会上发表演讲，要求写的是一篇演讲稿。写作者的身份——中国代表；写作对象——他国代表；写作内容——挖掘桥的内涵，描绘中国形象；写作目的——彰显中国形象，传递中华韵味、中国理念和国家自信。<br>单项参考立意：①就赵州桥谈中国古代文明；②就港珠澳大桥谈民族复兴；③就鹊桥谈中国人的美好情感；④就“一带一路”谈人类命运共同体。<br>综合参考立意：①综合港珠澳大桥和“一带一路”谈大国气象；②综合赵州桥和鹊桥谈中国人的智慧与情感；③综合赵州桥和港珠澳大桥谈中国的发展；④综合鹊桥和“一带一路”谈个体感情与人类命运共同体；⑤综合四座桥，写桥在中国的工具价值及文化、政治意义。</p>
+<h5 id="笔记"><a href="#笔记" class="headerlink" title="笔记"></a>笔记</h5><p>庙号是被供奉时所称呼的名号，起源于重视祭祀与敬拜的商朝。但是在隋以前，并不是每一个皇帝都有庙号，因为按照典制，只有文治武功和德行卓著者方可入庙奉祀。汉朝对于追加庙号一事极为慎重，不少皇帝因此都没有庙号。唐以后，每个皇帝才都有了庙号。<br>最初并不是所有君王都有庙号，一般君王死后会建筑专属的家庙祭祀，但在几代之后就必须毁去原庙，而于太庙合并祭祀。合于太庙祭祀称之为”祧”<br>tiāo，”祧”这件事情有实际上的作用。如果每个君王的庙都留下，数代之后为数众多的家庙会有祭祀上的困难。而对国家有大功、值得子孙永世祭祀的先王，就会特别追上庙号，以视永远立庙祭祀之意。</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://weremexii.github.io/2020/04/%E8%AF%AD%E6%96%87/" data-id="ckf5jhpu2000c4e606mldhjms" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-English-Exercises" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2020/03/English-Exercises/" class="article-date">
+  <time datetime="2020-03-31T08:48:31.000Z" itemprop="datePublished">2020-03-31</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2020/03/English-Exercises/">English Exercises</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h5 id="阅读理解"><a href="#阅读理解" class="headerlink" title="阅读理解"></a>阅读理解</h5><p><img src="https://raw.githubusercontent.com/weremexii/imgformarkdown/master/typora/202003/31/164914-466275.png" alt="1585644551593"></p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://weremexii.github.io/2020/03/English-Exercises/" data-id="ckf5jhptn00004e60e2v6esow" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-化学-化工流程" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2020/03/%E5%8C%96%E5%AD%A6-%E5%8C%96%E5%B7%A5%E6%B5%81%E7%A8%8B/" class="article-date">
+  <time datetime="2020-03-31T06:44:03.000Z" itemprop="datePublished">2020-03-31</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2020/03/%E5%8C%96%E5%AD%A6-%E5%8C%96%E5%B7%A5%E6%B5%81%E7%A8%8B/">化学_化工流程</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h5 id="初步处理"><a href="#初步处理" class="headerlink" title="初步处理"></a>初步处理</h5><p><img src="https://raw.githubusercontent.com/weremexii/imgformarkdown/master/typora/202003/31/144438-593169.png" alt="1585637073526"></p>
+<h5 id="答题模板"><a href="#答题模板" class="headerlink" title="答题模板"></a>答题模板</h5><p><img src="https://raw.githubusercontent.com/weremexii/imgformarkdown/master/typora/202003/31/150931-125002.png" alt="1585638568186"></p>
+<p><img src="https://raw.githubusercontent.com/weremexii/imgformarkdown/master/typora/202003/31/151047-32063.png" alt="1585638609684"></p>
+<p><img src="https://raw.githubusercontent.com/weremexii/imgformarkdown/master/typora/202003/31/150955-878153.png" alt="1585638593248"></p>
+<p><img src="https://raw.githubusercontent.com/weremexii/imgformarkdown/master/typora/202003/31/151158-991377.png" alt="1585638685155"></p>
+<p><img src="https://raw.githubusercontent.com/weremexii/imgformarkdown/master/typora/202003/31/151245-970537.png" alt="1585638762359"></p>
+<h5 id="关注物质本身性质，不要漏掉"><a href="#关注物质本身性质，不要漏掉" class="headerlink" title="关注物质本身性质，不要漏掉"></a>关注物质本身性质，不要漏掉</h5><p><img src="https://raw.githubusercontent.com/weremexii/imgformarkdown/master/typora/202003/31/154401-580641.png" alt="1585640637112"></p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://weremexii.github.io/2020/03/%E5%8C%96%E5%AD%A6-%E5%8C%96%E5%B7%A5%E6%B5%81%E7%A8%8B/" data-id="ckf5jhptx00074e606rlrhdzc" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-生物错题" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2020/03/%E7%94%9F%E7%89%A9%E9%94%99%E9%A2%98/" class="article-date">
+  <time datetime="2020-03-30T03:32:57.000Z" itemprop="datePublished">2020-03-30</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2020/03/%E7%94%9F%E7%89%A9%E9%94%99%E9%A2%98/">生物错题</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h4 id="开封市2020高三模拟"><a href="#开封市2020高三模拟" class="headerlink" title="开封市2020高三模拟"></a>开封市2020高三模拟</h4><p><img src="https://raw.githubusercontent.com/weremexii/imgformarkdown/master/typora/202003/27/210125-701410.png" alt="1585314085051"></p>
+<p><strong>长眼</strong></p>
+<p>6.B．无机环境中的物质可以通过多种途径被生物群落反复利用（X）</p>
+<p>并不是无机环境中所有物质都可以被生物群落反复利用，只有那些生物可以利用的元素是可以被循环反复利用的，这就是生态系统物质循环理论的来源。-老师</p>
+<p><img src="https://raw.githubusercontent.com/weremexii/imgformarkdown/master/typora/202003/27/210430-614773.png" alt="1585314264623"></p>
+<p>ap或aP ；3个 </p>
+<p>注意 “种子胚”</p>
+<p><img src="https://raw.githubusercontent.com/weremexii/imgformarkdown/master/typora/202003/27/210833-29847.png" alt="image_26"></p>
+<p><img src="https://raw.githubusercontent.com/weremexii/imgformarkdown/master/typora/202003/27/210820-181316.png" alt="1585314498408"></p>
+<p><img src="https://raw.githubusercontent.com/weremexii/imgformarkdown/master/typora/202003/27/210906-519890.png" alt="1585314546427"></p>
+<h3 id="武汉3月质检"><a href="#武汉3月质检" class="headerlink" title="武汉3月质检"></a>武汉3月质检</h3><p><img src="https://raw.githubusercontent.com/weremexii/imgformarkdown/master/typora/202003/30/113600-209581.png" alt="1585539359882"></p>
+<p>注意纵坐标的0值</p>
+<h5 id="神经冲动的传递中的物质基础和结构基础"><a href="#神经冲动的传递中的物质基础和结构基础" class="headerlink" title="神经冲动的传递中的物质基础和结构基础"></a>神经冲动的传递中的物质基础和结构基础</h5><p><img src="https://raw.githubusercontent.com/weremexii/imgformarkdown/master/typora/202003/30/114300-73955.png" alt="1585539778832"></p>
+<h5 id="实验设计参考"><a href="#实验设计参考" class="headerlink" title="实验设计参考"></a>实验设计参考</h5><p><img src="https://raw.githubusercontent.com/weremexii/imgformarkdown/master/typora/202003/30/115155-713624.png" alt="1585540313243"></p>
+<h4 id="0313C"><a href="#0313C" class="headerlink" title="0313C"></a>0313C</h4><p><img src="https://raw.githubusercontent.com/weremexii/imgformarkdown/master/typora/202004/03/170653-618063.png" alt="1585904810361"></p>
+<p>参见黑色素合成-苯丙氨酸转化成酪氨酸</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://weremexii.github.io/2020/03/%E7%94%9F%E7%89%A9%E9%94%99%E9%A2%98/" data-id="ckf5jhpu0000a4e602h7u3khl" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-化学错题" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2020/03/%E5%8C%96%E5%AD%A6%E9%94%99%E9%A2%98/" class="article-date">
+  <time datetime="2020-03-27T13:29:16.000Z" itemprop="datePublished">2020-03-27</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2020/03/%E5%8C%96%E5%AD%A6%E9%94%99%E9%A2%98/">化学错题</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h5 id="滴定，化学平衡"><a href="#滴定，化学平衡" class="headerlink" title="滴定，化学平衡"></a>滴定，化学平衡</h5><p><img src="https://raw.githubusercontent.com/weremexii/imgformarkdown/master/typora/202004/04/170948-570541.png" alt="1585991375498"></p>
+<h5 id="洗涤沉淀"><a href="#洗涤沉淀" class="headerlink" title="洗涤沉淀"></a>洗涤沉淀</h5><p><img src="https://raw.githubusercontent.com/weremexii/imgformarkdown/master/typora/202003/27/212944-104243.png" alt="1585315783825"></p>
+<h5 id="使用圆底烧瓶进行蒸馏"><a href="#使用圆底烧瓶进行蒸馏" class="headerlink" title="使用圆底烧瓶进行蒸馏"></a>使用圆底烧瓶进行蒸馏</h5><p><img src="https://raw.githubusercontent.com/weremexii/imgformarkdown/master/typora/202003/30/110959-912282.png" alt="1585537796189"></p>
+<h5 id="从反应本身控制温度"><a href="#从反应本身控制温度" class="headerlink" title="从反应本身控制温度"></a>从反应本身控制温度</h5><p><img src="https://raw.githubusercontent.com/weremexii/imgformarkdown/master/typora/202003/30/111713-210318.png" alt="1585538231064"></p>
+<p><img src="https://raw.githubusercontent.com/weremexii/imgformarkdown/master/typora/202003/30/111729-738274.png" alt="1585538241136"></p>
+<p><img src="https://raw.githubusercontent.com/weremexii/imgformarkdown/master/typora/202003/30/111744-16933.png" alt="1585538256122"></p>
+<h5 id="有机合成路线"><a href="#有机合成路线" class="headerlink" title="有机合成路线"></a>有机合成路线</h5><p><img src="https://raw.githubusercontent.com/weremexii/imgformarkdown/master/typora/202003/27/213759-932322.png" alt="image_28"></p>
+<p><img src="https://raw.githubusercontent.com/weremexii/imgformarkdown/master/typora/202003/27/213920-914782.png" alt="image_30"></p>
+<p><img src="https://raw.githubusercontent.com/weremexii/imgformarkdown/master/typora/202003/27/213930-440874.png" alt="image_31"></p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://weremexii.github.io/2020/03/%E5%8C%96%E5%AD%A6%E9%94%99%E9%A2%98/" data-id="ckf5jhpty00094e60f9b99x80" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-B8U3-5" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2020/03/B8U3-5/" class="article-date">
+  <time datetime="2020-03-27T08:00:07.000Z" itemprop="datePublished">2020-03-27</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2020/03/B8U3-5/">Book 8 Unit 3~5</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>Unit 3</p>
+<p>△amphibious  adj.  两栖（类）的<br>△George Stephenson  乔治·斯蒂芬森<br>        （英国发明家，蒸汽机的发明人）<br>patent  n.  专利证书；专利权<br>call up  给……打电话<br>courtyard  n.  院子；庭院；天井<br>now and then  偶尔；有时<br>walnut  n.  胡桃；胡桃木<br>distinguish  vi. &amp; vt.  显示……的差别；<br>                使……有所不同；辨别<br>merciful  adj.  宽大的；仁慈的；慈悲的<br>product  n.  产品<br>powder  n.  粉末；火药<br>set about  开始；着手<br>perfume  n.  香水；香味<br>stainless  adj.无锈的；不锈的；没有污点的<br>△jelly  n.  果冻；果冻状物<br>cube  n.  立方体；立方<br>   cubic  adj.  立方的<br>abrupt  adj.  突然的；意外的<br>   abruptly  adv.  突然地；唐突地<br>convenient  adj.  便利的；方便的；就近的<br>caution  n.  小心；谨慎<br>expectation  n.  预料；期待；期望<br>passive  adj.  被动的；消极的；<br>           被动语态的<br>merry  adj.  愉快的；高兴的<br>   merrily  adv.  高兴地；愉快地<br>seize  vt.  抓住；捉住；夺<br>△recognition  n.  认出；认可；承认<br>criterion  n.  （评判的）标准；尺度<br>△claim  n. &amp; vt.  要求；声称；主张<br>valid  adj.  有效的；确凿的<br>file  n.  文件；档案；文件夹<br>     vt. 提交；将……归档<br>ripe  adj.  熟的；成熟的<br>string  n.  线；绳子；一串<br>glue  n.  胶；胶水<br>      vt.粘贴；粘合<br>△rod  n.  杆；棒<br>freezing  adj.  冰冻的；严寒的<br>greengrocer  n.  果蔬商<br>          （pl）蔬菜水果店<br>identification  n.  鉴定；辨认；确定；<br>              身份证明<br>directory  n.  电话簿；商行名录<br>dial  vt.  拨（电话）<br>rainfall  n.  降雨<br>△courtroom  n.  法庭；审判室<br>innocent  adj.  清白的；无罪的；天真的<br>lantern  n.  灯笼；提灯<br>bear  vt.  忍受；忍耐；负担<br>jam  n.  堵塞；阻塞；果酱<br>△Alexander Graham<br>            亚历山大·格雷厄姆·贝尔<br>△microphone  n.  麦克风；话筒<br>forehead  n.  额头<br>beaten track 被踩出来的路；常规；惯例<br>△occasionally  adv.  偶然地；不时地<br>dive into  迅速把手伸入；一心投入<br>dynamic  adj.  充满活力的；精力充沛的；<br>            动态的；发展变化的<br>set out (to do)  开始（做）<br>△multiple adj. 多种的；多样的；多类型的<br>           n.倍数<br>△Morse  莫尔斯电码<br>dot  n.  点；小圆点<br>    vt. 以小圆点标出；分散<br>tap  vt.  轻打；轻拍；轻敲<br>     n.轻轻地敲击（声）；（水）龙头<br>wire  n.  金属丝；电线<br>straw  n.  稻草；麦秆；饮料吸管<br>△reproduce  vt.  复制；<br>               再现……的形象或声音<br>current  n.  （水或气）流；电流<br>        adj. 现在的；当前的<br>helicopter  n.  直升飞机<br>triangle  n.  三角形；三角形物体<br>△tetrahedron  n.  四面体<br>stable  adj.  稳固的；稳定的；安定的<br>△invaluable  adj.  无价的；极宝贵的<br>associate  vt.  联想；联系<br>         n.同伴；伙伴<br>practical  adj.  实际的；实践的；实用的<br>△James Dyson  詹姆斯·戴森（英国发明家）<br>refrigerator  n.  冰箱<br>court  n.  法庭；法院；朝廷<br>extension  n.  电话分机；扩大；延伸<br>hang on  不挂断；稍等；紧紧握住<br>out of order  次序颠倒；发生故障<br>get through  设法联系上（尤指打通电话）；<br>           （设法）做完；通过<br>ring back  回复电话<br>ring off  挂断电话<br>version  n.  版本；译本<br>competence  n.  能力；胜利；本领<br>   △competent  n.  能胜任的；有能力的；<br>                 称职的<br>jeep  n.  吉普车<br>personnel  n.  人力资源；人事部；全体人员</p>
+<p>Unit 4</p>
+<p>△Pygmalion  n.  皮格马利翁（希腊神话）<br>△George Bernard Shaw  乔治·伯纳德·萧 （也译萧伯纳，英国剧作家）<br>adaptation  n.  适应（性）；改编本<br>classic  adj.  经典的；第一流的<br>        n.经典著作<br>caption  n.  （图片上的）说明文字；<br>           （电视、电影）字幕；<br>           （杂志等文章的）标题；韪<br>plot  n.  情节；阴谋<br>professor  n.  教授<br>△Higgins  希金斯 （姓）<br>△phonetics  n.  语音学<br>△colonel  n.  （陆军）上校<br>△Pickering 皮克林（姓）<br>△fateful  adj.  重要的；决定性的；<br>            命中注定的<br>whistle  vi.  吹口哨；发出汽笛声<br>        n.口哨声；汽笛声<br>garment  n. （一件）衣服（外套、裙、袍<br>                等）<br>       （pl）服装<br>woollen  adj. 毛纺的；纯毛的（&lt;美&gt;woolen）<br>hesitate  vi.  犹豫；踌躇<br>uncomfortable  adj.  不舒服的；不安的；<br>                 不自在的<br>  uncomfortably  adv. 不舒服的；不自在地<br>troublesome  adj. 带来麻烦的；使人心烦的<br>wallet  n.  皮夹；钱包<br>outcome  n.  结果；效果<br>thief  n.  小偷；贼<br>handkerchief  n.  手帕；手绢；纸巾<br>△disguise  vt.  伪装；假扮；遮掩<br>           n.伪装<br>   △in disguise  伪装（的）；假扮（的）<br>mistaken  adj.  （见解或判断上）错误的；<br>              不正确的<br>brilliant  adj.  光辉灿烂的；杰出的；<br>            才华横溢的<br>classify  vt.  编排；分类；归类<br>remark  n.  谈论；言论；评述<br>        vt. &amp; vi.谈论；评论；说起<br>betray  vt.  显露出（本来面目）；背叛<br>upper  adj.  （位置或地位）较高的；<br>           级别较高的<br>extraordinary  adj.  不同寻常的；非凡的<br>condemn  vi.  谴责；使……注定<br>△gutter  n.  排水沟；阴沟；贫民区<br>properly  adv.  适当地；恰当地<br>pass…off as… （把某人）改变或冒充成……<br>△duchess  n.  公爵夫人；女公爵<br>ambassador  n.  大使；使节<br>acquaintance  n.  相识；了解；熟人<br>   make one’s acquaintance  结识；<br>                       与……相见<br>handful  n.  一把；少量<br>△amazement  n.  惊讶；惊愕<br>   △in amazement  震惊；惊讶<br>fortune  n.  机会；运气；大笔的钱<br>authentic  adj.  真实的；真正的；可信的；<br>             可靠的<br>generally speaking  一般来说<br>status  n.  身份；地位；职位<br>superior  adj.  优秀的；较高的；上级的<br>        n.上级；长官<br>in terms of…  就……来说；从……角度<br>△disapprove  vt. &amp; vi.  不赞成；反对；<br>                 认为不好<br>rob  vt.  抢劫；盗窃；剥夺<br>antique  adj.  古时的；（因古老、稀少而）<br>              珍贵的<br>        n. 文物；古董；古玩<br>musical  adj.  音乐的；喜爱音乐的<br>        n.音乐喜剧<br>stocking  n.  长袜<br>△believer  n.  信徒；教徒<br>Buddhism  n.  佛教<br>   △Buddhist  n.  佛教徒<br>              adj.佛教的<br>   △Buddha  n.  佛<br>△vowel  n.  元音；元音字母<br>△Pearce  皮尔斯（姓）<br>cookie  n.  饼干<br>teapot  n.  茶壶<br>cream  n.  奶油；面霜<br>nail  n.  指甲；钉子<br>show…in  带或领……进来<br>wax  n.  蜡；蜜蜡<br>     vt.上蜡<br>disk  n.  磁盘<br>△wax disk  旧式唱片<br>shabby  adj.  破旧的；寒酸的<br>△curtsy  vi. （also curtsey） 行屈膝礼<br>         n.（女子行的）屈膝礼<br>△shilling  n.  先令（1971年以前的英国货<br>            币单位，旧币的12便士）<br>referee  n.  裁判员；仲裁者<br>compromise  ni. &amp; vi.  妥协；折衷<br>horrible  adj.  可怕的；恐怖的<br>laundry  n.  洗衣店；洗衣房；<br>           （待洗的或洗好的）衣服<br>bathtub  n.  浴缸；澡盆<br>sob  vi.  啜泣；抽噎<br>     n.啜泣（声）；抽噎（声）<br>waist  n.  腰；腰部；腰围<br>vest  n.  背心；内衣<br>disgusting  adj.  使人反感的；令人厌恶的<br>once more  再一次<br>in need of  需要……<br>△heartily  adv.  尽情地；热心地；痛快地<br>overlook  vt.  俯视；忽视；不理会<br>alphabet  n.  字母表<br>△effective  adj.  有效的<br>fade  vi. &amp; vt.（使）褪色；减弱；逐渐消失<br>  fade out （声音、画面）逐渐模糊；渐淡</p>
+<h2 id="Book-8-Unit-5"><a href="#Book-8-Unit-5" class="headerlink" title="Book 8 Unit 5"></a>Book 8 Unit 5</h2><p>Unit 5</p>
+<p>△identify  vt.  确认；识别；鉴别<br>alternative  n.  可能的选择<br>           adj. 供选择的；其他的<br>△archaeology  n. 考古学(&lt;美&gt;archeology)<br>   △archaeological  adj.  考古学的；<br>      与考古学有关的 (&lt;美&gt;archeological)<br>   △archaeologist  n.  考古学家<br>                     (&lt;美&gt;archeologist)<br>starvation  n.  挨饿；饿死<br>tentative  adj.  试探性的；不确定的<br>accuracy  n.  精确；准确<br>△excavate  vt.  挖掘；发掘<br>   △excavation  n.  挖掘；发掘<br>interrupt  vt. &amp; vi.  打断……讲话；打岔；<br>                 暂时中断或中止<br>acute  adj.  有观察力的；敏锐的；严重的；<br>          深刻的<br>assume  vt.  假定；设想<br>regardless  adv.  不管；不顾<br>   regardless of  不管；不顾<br>mat  n.  席子；垫子<br>quilt  n.  被子；棉被<br>beast  n. 野兽<br>at most  至多；最多<br>centimetre  n.  厘米 (&lt;美&gt;centimeter)<br>sharpen  vi. &amp; vt.  （使）锋利；尖锐；清晰<br>   sharpener  n.  磨具；削具<br>cut up  切碎<br>△scrape  vt.  擦净；削平；磨光<br>   △scraper  n.  刮刀；刮削器<br>ample  adj.  足够的；充足的；富裕的<br>messy  adj.  凌乱的；脏的<br>primitive  adj.  原始的；远古的；简陋的<br>△bead  n.  小珠子；滴<br>botany  n.  植物学<br>   botanical  adj.  植物学的；<br>                与植物学有关的<br>analysis  n.  分析<br>seashell  n.  海贝壳<br>ripen  vt. &amp; vi.  使……成熟；成熟<br>category  n.  种类；类别；范畴<br>significance  n.  意义；意思；重要性；<br>              重要意义<br>somehow  adv.  以……方式；不知怎么地<br>systematic  adj.  有系统的；有计划的；<br>             有条理的<br>spit  vt. (spat, spit; spat, spit) 吐出（唾液、<br>                    食物等）<br>     vi.吐痰<br>delete  vt.  删；删除<br>album  n.  相册；集邮册；唱片<br>scratch  n. （刮、抓、划的）痕迹；搔；挠<br>       vt. 搔；抓；擦伤；刮坏<br>academy  n.  学院；学会；学术团体；院校<br>receptionist  n.  接待员；招待员<br>onion  n.  洋葱<br>kindergarten  n.  幼儿园<br>skateboard  n.  滑板<br>fed up with  受够了；饱受；厌烦<br>yogurt  n.  酸乳酷；酸奶<br>radioactive  adj.  放射性的；有辐射能的<br>   radioactivity  n.  放射性<br>division  n.  分割；划分；分配；分界线<br>BC  公元前<br>melon  n.  （各种）瓜<br>wrinkle  n.  皱纹<br>pulse  vi.  强烈而有规律地跳动；搏动<br>      n.脉搏；节拍<br>△vein  n.  血管；静脉<br>applaud  vi. &amp; vt.  鼓掌欢迎；赞赏<br>look ahead  向前看；为将来打算<br>howl  vt. &amp; vi.  嗥叫；叫喊；吼叫<br>accelerate  vi. &amp; vt.  加速；促进<br>spear  n.  矛；枪<br>arrest  vt.  逮捕；吸引<br>       n.逮捕；拘留<br>dizzy  adj.  晕眩的；昏乱的；<br>         使人发晕或困惑的<br>△eyebrow  n.  眉毛<br>△cheekbone  n.  颧骨<br>△arrowhead  n.  箭头<br>△axe  n.  斧；斧子<br>hammer  n.  铁锤；锤子<br>gay  adj.  快乐的；欢快的<br>   gaily  adv.  快乐地；轻松地<br>skilful  adj. 有技巧的；熟练的<br>         (&lt;.美&gt;skillful)<br>date back  追溯到……<br>punctuation  n.  标点符号<br>△worship  vt. &amp; vi.  崇拜；敬奉<br>           n.崇拜；敬神<br>△craftsmanship  n.  技艺；手艺；<br>                精工细作</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://weremexii.github.io/2020/03/B8U3-5/" data-id="ckf5jhptv00054e6058bya8ux" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-T1" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2020/03/T1/" class="article-date">
+  <time datetime="2020-03-27T07:32:40.000Z" itemprop="datePublished">2020-03-27</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2020/03/T1/">T1</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="稍微试一试"><a href="#稍微试一试" class="headerlink" title="稍微试一试"></a>稍微试一试</h2><p><img src="https://raw.githubusercontent.com/weremexii/imgformarkdown/master/typora/202003/27/153053-760596.png" alt="1585294248537"></p>
+<p>这是长郡中学的21导数题的老师解析手稿，好看吗？</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://weremexii.github.io/2020/03/T1/" data-id="ckf5jhptq00014e60f8vza2oa" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-clonetest" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2020/03/clonetest/" class="article-date">
+  <time datetime="2020-03-26T13:52:19.000Z" itemprop="datePublished">2020-03-26</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2020/03/clonetest/">clonetest</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>刚才看了Github的官方文档，熟悉一下git的工作流程。<br>[<a href="https://guides.github.com/activities/hello-world/]" target="_blank" rel="noopener">https://guides.github.com/activities/hello-world/]</a></p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://weremexii.github.io/2020/03/clonetest/" data-id="ckf5jhpts00024e607omt6iti" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/git/" rel="tag">git</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+
+
+  <nav id="page-nav">
+    
+    <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="extend next" rel="next" href="/page/2/">下一页 &amp;raquo;</a>
+  </nav>
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">标签</h3>
+    <div class="widget">
+      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/Fusion/" rel="tag">Fusion</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/git/" rel="tag">git</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">标签云</h3>
+    <div class="widget tagcloud">
+      <a href="/tags/Fusion/" style="font-size: 10px;">Fusion</a> <a href="/tags/git/" style="font-size: 10px;">git</a>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">归档</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/09/">九月 2020</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/04/">四月 2020</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/03/">三月 2020</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">最新文章</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2020/09/tryfusion12/">Fusion 12 获取序列号</a>
+          </li>
+        
+          <li>
+            <a href="/2020/04/%E7%94%9F%E7%89%A9%E2%80%94-%E9%80%89%E4%BF%AE%E4%B8%80/">生物—_选修一</a>
+          </li>
+        
+          <li>
+            <a href="/2020/04/%E8%AF%AD%E6%96%87/">语文</a>
+          </li>
+        
+          <li>
+            <a href="/2020/03/English-Exercises/">English Exercises</a>
+          </li>
+        
+          <li>
+            <a href="/2020/03/%E5%8C%96%E5%AD%A6-%E5%8C%96%E5%B7%A5%E6%B5%81%E7%A8%8B/">化学_化工流程</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2020 weremexii<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+
+  
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+
+
+<script src="/js/script.js"></script>
+
+
+
+
+  </div>
+</body>
+</html>
