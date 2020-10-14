@@ -1,6 +1,31 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>macOS下VScode的debug配置</title>
+    <url>/2020/10/macOS%E4%B8%8BVScode%E7%9A%84debug%E9%85%8D%E7%BD%AE/</url>
+    <content><![CDATA[<h3 id="一句话总结"><a href="#一句话总结" class="headerlink" title="一句话总结"></a>一句话总结</h3><p>在网上找了许多教程,到最后发现跟着vscode自动生成的配置就能实现我的需求.</p>
+<h3 id="我的需求"><a href="#我的需求" class="headerlink" title="我的需求"></a>我的需求</h3><p>在VSCode内进行debug操作,并允许我在其内置终端给程序输入.</p>
+<h3 id="解决方法"><a href="#解决方法" class="headerlink" title="解决方法"></a>解决方法</h3><ol>
+<li><p>了解VSCode的编译(build)与调试(debug)配置方式</p>
+<p> VSCode在工作区的每个根文件夹下的.vscode文件夹放置build与debug配置文件.虽然不严谨,但可以把tasks.json当作build的配置文件,launch.json当作debug的配置文件.</p>
+</li>
+<li><p>在第一次build(快捷键shift+command+B)时会弹出列表选择编译命令,不明白的话就选第一个.第一次debug(快捷键F5)也是如此,会弹出列表选择调试方式,选择lldb launch.</p>
+</li>
+<li><p>在选择build或debug的选项后,都打开相应的配置文件.tasks.json的自动配置基本正确,lanuch.json中,需要将program项的值改为tasks.json中args数组中紧接字符串-o的字符串(类似于<code>${fileDirname}/${fileBasenameNoExtension}</code>)</p>
+<p> 这样,debug时就可以直接使用build生成的可执行文件了.</p>
+</li>
+<li><p>在launch的配置中可以加入一项</p>
+<pre><code>“preLaunchTask”: “(tasks.json里配置项label的值)”</code></pre><p> 这样,在每次debug前都会调用build来生成可执行文件,再debug.</p>
+</li>
+</ol>
+]]></content>
+      <tags>
+        <tag>VSCode</tag>
+        <tag>macOS</tag>
+        <tag>debug</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Fusion 12 获取序列号</title>
     <url>/2020/09/tryfusion12/</url>
     <content><![CDATA[<p>在macOS上使用虚拟机软件，不外乎是Parallels，Fusion或者VisualBox。Paralles以流畅到极致的Windows体验著称，但虚拟的其他系统体验却相形见绌。VisualBox则被称为虚拟拖拉机，体验可见一斑（然而博主却在类似MuMu模拟器之类的Android虚拟机软件中看到VisualBox）。虚拟Linux系系统就选Fusion了。</p>

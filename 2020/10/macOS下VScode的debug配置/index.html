@@ -5,14 +5,21 @@
   
 
   
-  <title>归档: 2020 | Mexii&#39;s Learning Notes</title>
+  <title>macOS下VScode的debug配置 | Mexii&#39;s Learning Notes</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Mexii&#39;s Learning Notes">
-<meta property="og:url" content="https://weremexii.github.io/archives/2020/page/2/index.html">
+  <meta name="description" content="一句话总结在网上找了许多教程,到最后发现跟着vscode自动生成的配置就能实现我的需求. 我的需求在VSCode内进行debug操作,并允许我在其内置终端给程序输入. 解决方法 了解VSCode的编译(build)与调试(debug)配置方式  VSCode在工作区的每个根文件夹下的.vscode文件夹放置build与debug配置文件.虽然不严谨,但可以把tasks.json当作build的配置">
+<meta property="og:type" content="article">
+<meta property="og:title" content="macOS下VScode的debug配置">
+<meta property="og:url" content="https://weremexii.github.io/2020/10/macOS%E4%B8%8BVScode%E7%9A%84debug%E9%85%8D%E7%BD%AE/index.html">
 <meta property="og:site_name" content="Mexii&#39;s Learning Notes">
+<meta property="og:description" content="一句话总结在网上找了许多教程,到最后发现跟着vscode自动生成的配置就能实现我的需求. 我的需求在VSCode内进行debug操作,并允许我在其内置终端给程序输入. 解决方法 了解VSCode的编译(build)与调试(debug)配置方式  VSCode在工作区的每个根文件夹下的.vscode文件夹放置build与debug配置文件.虽然不严谨,但可以把tasks.json当作build的配置">
 <meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2020-10-14T15:17:53.000Z">
+<meta property="article:modified_time" content="2020-10-14T15:46:54.693Z">
 <meta property="article:author" content="weremexii">
+<meta property="article:tag" content="VSCode">
+<meta property="article:tag" content="macOS">
+<meta property="article:tag" content="debug">
 <meta name="twitter:card" content="summary">
   
     <link rel="alternate" href="/atom.xml" title="Mexii&#39;s Learning Notes" type="application/atom+xml">
@@ -62,83 +69,68 @@
   </div>
 </header>
       <div class="outer">
-        <section id="main">
-  
-  
-    
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2020" class="archive-year">2020</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2020/03/clonetest/" class="archive-article-date">
-  <time datetime="2020-03-26T13:52:19.000Z" itemprop="datePublished">3月 26</time>
+        <section id="main"><article id="post-macOS下VScode的debug配置" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2020/10/macOS%E4%B8%8BVScode%E7%9A%84debug%E9%85%8D%E7%BD%AE/" class="article-date">
+  <time datetime="2020-10-14T15:17:53.000Z" itemprop="datePublished">2020-10-14</time>
 </a>
-      
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/03/clonetest/">clonetest</a>
+    <h1 class="article-title" itemprop="name">
+      macOS下VScode的debug配置
     </h1>
   
 
-    </header>
-  </div>
-</article>
-  
+      </header>
     
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2020/03/helloworld-2/" class="archive-article-date">
-  <time datetime="2020-03-26T13:18:33.000Z" itemprop="datePublished">3月 26</time>
-</a>
+    <div class="article-entry" itemprop="articleBody">
       
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/03/helloworld-2/">helloworld*2</a>
-    </h1>
-  
+        <h3 id="一句话总结"><a href="#一句话总结" class="headerlink" title="一句话总结"></a>一句话总结</h3><p>在网上找了许多教程,到最后发现跟着vscode自动生成的配置就能实现我的需求.</p>
+<h3 id="我的需求"><a href="#我的需求" class="headerlink" title="我的需求"></a>我的需求</h3><p>在VSCode内进行debug操作,并允许我在其内置终端给程序输入.</p>
+<h3 id="解决方法"><a href="#解决方法" class="headerlink" title="解决方法"></a>解决方法</h3><ol>
+<li><p>了解VSCode的编译(build)与调试(debug)配置方式</p>
+<p> VSCode在工作区的每个根文件夹下的.vscode文件夹放置build与debug配置文件.虽然不严谨,但可以把tasks.json当作build的配置文件,launch.json当作debug的配置文件.</p>
+</li>
+<li><p>在第一次build(快捷键shift+command+B)时会弹出列表选择编译命令,不明白的话就选第一个.第一次debug(快捷键F5)也是如此,会弹出列表选择调试方式,选择lldb launch.</p>
+</li>
+<li><p>在选择build或debug的选项后,都打开相应的配置文件.tasks.json的自动配置基本正确,lanuch.json中,需要将program项的值改为tasks.json中args数组中紧接字符串-o的字符串(类似于<code>${fileDirname}/${fileBasenameNoExtension}</code>)</p>
+<p> 这样,debug时就可以直接使用build生成的可执行文件了.</p>
+</li>
+<li><p>在launch的配置中可以加入一项</p>
+<pre><code>“preLaunchTask”: “(tasks.json里配置项label的值)”</code></pre><p> 这样,在每次debug前都会调用build来生成可执行文件,再debug.</p>
+</li>
+</ol>
 
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2020/03/hello-world/" class="archive-article-date">
-  <time datetime="2020-03-26T13:06:26.000Z" itemprop="datePublished">3月 26</time>
-</a>
       
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/03/hello-world/">Hello World</a>
-    </h1>
-  
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://weremexii.github.io/2020/10/macOS%E4%B8%8BVScode%E7%9A%84debug%E9%85%8D%E7%BD%AE/" data-id="ckg9kg90f00001860bo3ug35e" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/VSCode/" rel="tag">VSCode</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/debug/" rel="tag">debug</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/macOS/" rel="tag">macOS</a></li></ul>
 
-    </header>
+    </footer>
   </div>
-</article>
   
-  
-    </div></section>
-  
-
-
-  <nav id="page-nav">
     
-    <a class="extend prev" rel="prev" href="/archives/2020/">&amp;laquo; 上一页</a><a class="page-number" href="/archives/2020/">1</a><span class="page-number current">2</span>
-  </nav>
+<nav id="article-nav">
+  
+  
+    <a href="/2020/09/tryfusion12/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">Fusion 12 获取序列号</div>
+    </a>
+  
+</nav>
+
+  
+</article>
 
 </section>
         
