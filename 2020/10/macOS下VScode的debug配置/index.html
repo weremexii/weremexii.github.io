@@ -7,15 +7,15 @@
   
   <title>macOS下VScode的debug配置 | Mexii&#39;s Learning Notes</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="一句话总结在网上找了许多教程,到最后发现跟着vscode自动生成的配置就能实现我的需求. 我的需求在VSCode内进行debug操作,并允许我在其内置终端给程序输入. 解决方法 了解VSCode的编译(build)与调试(debug)配置方式  VSCode在工作区的每个根文件夹下的.vscode文件夹放置build与debug配置文件.虽然不严谨,但可以把tasks.json当作build的配置">
+  <meta name="description" content="一句话总结在网上找了许多教程,到最后发现跟着vscode自动生成的配置+一个扩展就能实现我的需求. 我的需求在VSCode内进行debug操作,并允许我在其内置终端给程序输入. 解决方法 安装扩展CodeLLDB.  了解VSCode的编译(build)与调试(debug)配置方式  VSCode在工作区的每个根文件夹下的.vscode文件夹放置build与debug配置文件.虽然不严谨,但可以把">
 <meta property="og:type" content="article">
 <meta property="og:title" content="macOS下VScode的debug配置">
 <meta property="og:url" content="https://weremexii.github.io/2020/10/macOS%E4%B8%8BVScode%E7%9A%84debug%E9%85%8D%E7%BD%AE/index.html">
 <meta property="og:site_name" content="Mexii&#39;s Learning Notes">
-<meta property="og:description" content="一句话总结在网上找了许多教程,到最后发现跟着vscode自动生成的配置就能实现我的需求. 我的需求在VSCode内进行debug操作,并允许我在其内置终端给程序输入. 解决方法 了解VSCode的编译(build)与调试(debug)配置方式  VSCode在工作区的每个根文件夹下的.vscode文件夹放置build与debug配置文件.虽然不严谨,但可以把tasks.json当作build的配置">
+<meta property="og:description" content="一句话总结在网上找了许多教程,到最后发现跟着vscode自动生成的配置+一个扩展就能实现我的需求. 我的需求在VSCode内进行debug操作,并允许我在其内置终端给程序输入. 解决方法 安装扩展CodeLLDB.  了解VSCode的编译(build)与调试(debug)配置方式  VSCode在工作区的每个根文件夹下的.vscode文件夹放置build与debug配置文件.虽然不严谨,但可以把">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2020-10-14T15:17:53.000Z">
-<meta property="article:modified_time" content="2020-10-14T15:55:08.248Z">
+<meta property="article:modified_time" content="2020-10-16T03:48:51.450Z">
 <meta property="article:author" content="weremexii">
 <meta property="article:tag" content="VSCode">
 <meta property="article:tag" content="macOS">
@@ -92,9 +92,11 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h3 id="一句话总结"><a href="#一句话总结" class="headerlink" title="一句话总结"></a>一句话总结</h3><p>在网上找了许多教程,到最后发现跟着vscode自动生成的配置就能实现我的需求.</p>
+        <h3 id="一句话总结"><a href="#一句话总结" class="headerlink" title="一句话总结"></a>一句话总结</h3><p>在网上找了许多教程,到最后发现跟着vscode自动生成的配置+一个扩展就能实现我的需求.</p>
 <h3 id="我的需求"><a href="#我的需求" class="headerlink" title="我的需求"></a>我的需求</h3><p>在VSCode内进行debug操作,并允许我在其内置终端给程序输入.</p>
-<h3 id="解决方法"><a href="#解决方法" class="headerlink" title="解决方法"></a>解决方法</h3><ol>
+<h3 id="解决方法"><a href="#解决方法" class="headerlink" title="解决方法"></a>解决方法</h3><ol start="0">
+<li><p>安装扩展CodeLLDB.</p>
+</li>
 <li><p>了解VSCode的编译(build)与调试(debug)配置方式</p>
 <p> VSCode在工作区的每个根文件夹下的.vscode文件夹放置build与debug配置文件.虽然不严谨,但可以把tasks.json当作build的配置文件,launch.json当作debug的配置文件.</p>
 </li>
