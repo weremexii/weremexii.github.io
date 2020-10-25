@@ -1,47 +1,107 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>macOS下VScode的debug配置</title>
-    <url>/2020/10/macOS%E4%B8%8BVScode%E7%9A%84debug%E9%85%8D%E7%BD%AE/</url>
-    <content><![CDATA[<h3 id="一句话总结"><a href="#一句话总结" class="headerlink" title="一句话总结"></a>一句话总结</h3><p>在网上找了许多教程,到最后发现跟着vscode自动生成的配置+一个扩展就能实现我的需求.</p>
-<h3 id="我的需求"><a href="#我的需求" class="headerlink" title="我的需求"></a>我的需求</h3><p>在VSCode内进行debug操作,并允许我在其内置终端给程序输入.</p>
-<h3 id="解决方法"><a href="#解决方法" class="headerlink" title="解决方法"></a>解决方法</h3><ol start="0">
-<li><p>安装扩展CodeLLDB.</p>
-</li>
-<li><p>了解VSCode的编译(build)与调试(debug)配置方式</p>
-<p> VSCode在工作区的每个根文件夹下的.vscode文件夹放置build与debug配置文件.虽然不严谨,但可以把tasks.json当作build的配置文件,launch.json当作debug的配置文件.</p>
-</li>
-<li><p>在第一次build(快捷键shift+command+B)时会弹出列表选择编译命令,不明白的话就选第一个.第一次debug(快捷键F5)也是如此,会弹出列表选择调试方式,选择lldb launch.</p>
-</li>
-<li><p>在选择build或debug的选项后,都打开相应的配置文件.tasks.json的自动配置基本正确,lanuch.json中,需要将program项的值改为tasks.json中args数组中紧接字符串-o的字符串(类似于<code>${fileDirname}/${fileBasenameNoExtension}</code>)</p>
-<p> 这样,debug时就可以直接使用build生成的可执行文件了.</p>
-</li>
-<li><p>在launch的配置中可以加入一项</p>
-<pre><code>“preLaunchTask”: “(tasks.json里配置项label的值)”</code></pre><p> 这样,在每次debug前都会调用build来生成可执行文件,再debug.</p>
-</li>
-</ol>
+    <title>English Exercises</title>
+    <url>/2020/03/English-Exercises/</url>
+    <content><![CDATA[<h5 id="阅读理解"><a href="#阅读理解" class="headerlink" title="阅读理解"></a>阅读理解</h5><p><img src="https://raw.githubusercontent.com/weremexii/imgformarkdown/master/typora/202003/31/164914-466275.png" alt="1585644551593"></p>
+]]></content>
+  </entry>
+  <entry>
+    <title>T1</title>
+    <url>/2020/03/T1/</url>
+    <content><![CDATA[<h2 id="稍微试一试"><a href="#稍微试一试" class="headerlink" title="稍微试一试"></a>稍微试一试</h2><p><img src="https://raw.githubusercontent.com/weremexii/imgformarkdown/master/typora/202003/27/153053-760596.png" alt="1585294248537"></p>
+<p>这是长郡中学的21导数题的老师解析手稿，好看吗？</p>
+]]></content>
+  </entry>
+  <entry>
+    <title>clonetest</title>
+    <url>/2020/03/clonetest/</url>
+    <content><![CDATA[<p>刚才看了Github的官方文档，熟悉一下git的工作流程。<br>[<a href="https://guides.github.com/activities/hello-world/]" target="_blank" rel="noopener">https://guides.github.com/activities/hello-world/]</a></p>
 ]]></content>
       <tags>
-        <tag>VSCode</tag>
-        <tag>macOS</tag>
-        <tag>debug</tag>
-        <tag>lldb</tag>
+        <tag>git</tag>
       </tags>
   </entry>
   <entry>
-    <title>Fusion 12 获取序列号</title>
-    <url>/2020/09/tryfusion12/</url>
-    <content><![CDATA[<p>在macOS上使用虚拟机软件，不外乎是Parallels，Fusion或者VisualBox。Paralles以流畅到极致的Windows体验著称，但虚拟的其他系统体验却相形见绌。VisualBox则被称为虚拟拖拉机，体验可见一斑（然而博主却在类似MuMu模拟器之类的Android虚拟机软件中看到VisualBox）。虚拟Linux系系统就选Fusion了。</p>
-<p>碰巧的是，vmware在8月<a href="https://blogs.vmware.com/teamfusion/2020/08/announcing-fusion-12-and-workstation-16.html" target="_blank" rel="noopener">发布Fusion 12</a>，并更新它的授权体系，允许免费的个人使用。这意味这博主不再需要cracked version啦，可以名正言顺地白嫖啦。</p>
-<p>PS:发布博文后，过了大概半个月才给出<a href="https://my.vmware.com/web/vmware/downloads/info/slug/desktop_end_user_computing/vmware_fusion/12_0" target="_blank" rel="noopener">下载地址</a>。</p>
-<p>正文开始</p>
-<h3 id="获取序列号"><a href="#获取序列号" class="headerlink" title="获取序列号"></a>获取序列号</h3><p>即便vmware放出个人版免费使用，也逃不了注册账户才能获得软件使用的序列号（安装的fusion 12有试用期，必须输入序列号才能解除试用）。值得注意的是，vmware的产品授权有着类似于AppStore的地区区别（国区美区这样的）。仔细来讲，一个账户可以拥有同时不同地区同一个软件的授权，地区看的是你登录vmware时的IP地址。</p>
-<p>博主在这里被坑了一波，我默认的代理节点为香港，通过代理登录vmware账户，点击<code>上述</code>下载页面的<code>Get Your License Key</code>再点击<code>My VMware License Key</code>，会跳转到vSphere Hypervisor的授权界面。几番尝试，博主关掉代理重新登录（建议退出登录后清除cookie再登录）,重复上述操作，跳转到了404。看来不同地区优惠不一样啊，抱着这样的想法，博主挂上了美国的代理。</p>
-<p>当然，在美国代理下上上述操作也不一定能拿到序列号，毕竟你并没有拿过序列号，My License Key中不一定会有。所幸博主在一个<a href="https://www.macrumors.com/2020/09/15/vmware-fusion-12-available/" target="_blank" rel="noopener">新闻页面</a>找到了Fusion 12的<a href="https://my.vmware.com/web/vmware/evalcenter?p=fusion-player-personal" target="_blank" rel="noopener">授权地址</a>（类似于上述的那个vSphere Hypervisor），点击Registrate，获得序列号（请全程美国代理）</p>
+    <title>Hello World</title>
+    <url>/2020/03/hello-world/</url>
+    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html" target="_blank" rel="noopener">Deployment</a></p>
 ]]></content>
-      <tags>
-        <tag>Fusion</tag>
-      </tags>
+  </entry>
+  <entry>
+    <title>Book 8 Unit 3~5</title>
+    <url>/2020/03/B8U3-5/</url>
+    <content><![CDATA[<p>Unit 3</p>
+<p>△amphibious  adj.  两栖（类）的<br>△George Stephenson  乔治·斯蒂芬森<br>        （英国发明家，蒸汽机的发明人）<br>patent  n.  专利证书；专利权<br>call up  给……打电话<br>courtyard  n.  院子；庭院；天井<br>now and then  偶尔；有时<br>walnut  n.  胡桃；胡桃木<br>distinguish  vi. &amp; vt.  显示……的差别；<br>                使……有所不同；辨别<br>merciful  adj.  宽大的；仁慈的；慈悲的<br>product  n.  产品<br>powder  n.  粉末；火药<br>set about  开始；着手<br>perfume  n.  香水；香味<br>stainless  adj.无锈的；不锈的；没有污点的<br>△jelly  n.  果冻；果冻状物<br>cube  n.  立方体；立方<br>   cubic  adj.  立方的<br>abrupt  adj.  突然的；意外的<br>   abruptly  adv.  突然地；唐突地<br>convenient  adj.  便利的；方便的；就近的<br>caution  n.  小心；谨慎<br>expectation  n.  预料；期待；期望<br>passive  adj.  被动的；消极的；<br>           被动语态的<br>merry  adj.  愉快的；高兴的<br>   merrily  adv.  高兴地；愉快地<br>seize  vt.  抓住；捉住；夺<br>△recognition  n.  认出；认可；承认<br>criterion  n.  （评判的）标准；尺度<br>△claim  n. &amp; vt.  要求；声称；主张<br>valid  adj.  有效的；确凿的<br>file  n.  文件；档案；文件夹<br>     vt. 提交；将……归档<br>ripe  adj.  熟的；成熟的<br>string  n.  线；绳子；一串<br>glue  n.  胶；胶水<br>      vt.粘贴；粘合<br>△rod  n.  杆；棒<br>freezing  adj.  冰冻的；严寒的<br>greengrocer  n.  果蔬商<br>          （pl）蔬菜水果店<br>identification  n.  鉴定；辨认；确定；<br>              身份证明<br>directory  n.  电话簿；商行名录<br>dial  vt.  拨（电话）<br>rainfall  n.  降雨<br>△courtroom  n.  法庭；审判室<br>innocent  adj.  清白的；无罪的；天真的<br>lantern  n.  灯笼；提灯<br>bear  vt.  忍受；忍耐；负担<br>jam  n.  堵塞；阻塞；果酱<br>△Alexander Graham<br>            亚历山大·格雷厄姆·贝尔<br>△microphone  n.  麦克风；话筒<br>forehead  n.  额头<br>beaten track 被踩出来的路；常规；惯例<br>△occasionally  adv.  偶然地；不时地<br>dive into  迅速把手伸入；一心投入<br>dynamic  adj.  充满活力的；精力充沛的；<br>            动态的；发展变化的<br>set out (to do)  开始（做）<br>△multiple adj. 多种的；多样的；多类型的<br>           n.倍数<br>△Morse  莫尔斯电码<br>dot  n.  点；小圆点<br>    vt. 以小圆点标出；分散<br>tap  vt.  轻打；轻拍；轻敲<br>     n.轻轻地敲击（声）；（水）龙头<br>wire  n.  金属丝；电线<br>straw  n.  稻草；麦秆；饮料吸管<br>△reproduce  vt.  复制；<br>               再现……的形象或声音<br>current  n.  （水或气）流；电流<br>        adj. 现在的；当前的<br>helicopter  n.  直升飞机<br>triangle  n.  三角形；三角形物体<br>△tetrahedron  n.  四面体<br>stable  adj.  稳固的；稳定的；安定的<br>△invaluable  adj.  无价的；极宝贵的<br>associate  vt.  联想；联系<br>         n.同伴；伙伴<br>practical  adj.  实际的；实践的；实用的<br>△James Dyson  詹姆斯·戴森（英国发明家）<br>refrigerator  n.  冰箱<br>court  n.  法庭；法院；朝廷<br>extension  n.  电话分机；扩大；延伸<br>hang on  不挂断；稍等；紧紧握住<br>out of order  次序颠倒；发生故障<br>get through  设法联系上（尤指打通电话）；<br>           （设法）做完；通过<br>ring back  回复电话<br>ring off  挂断电话<br>version  n.  版本；译本<br>competence  n.  能力；胜利；本领<br>   △competent  n.  能胜任的；有能力的；<br>                 称职的<br>jeep  n.  吉普车<br>personnel  n.  人力资源；人事部；全体人员</p>
+<p>Unit 4</p>
+<p>△Pygmalion  n.  皮格马利翁（希腊神话）<br>△George Bernard Shaw  乔治·伯纳德·萧 （也译萧伯纳，英国剧作家）<br>adaptation  n.  适应（性）；改编本<br>classic  adj.  经典的；第一流的<br>        n.经典著作<br>caption  n.  （图片上的）说明文字；<br>           （电视、电影）字幕；<br>           （杂志等文章的）标题；韪<br>plot  n.  情节；阴谋<br>professor  n.  教授<br>△Higgins  希金斯 （姓）<br>△phonetics  n.  语音学<br>△colonel  n.  （陆军）上校<br>△Pickering 皮克林（姓）<br>△fateful  adj.  重要的；决定性的；<br>            命中注定的<br>whistle  vi.  吹口哨；发出汽笛声<br>        n.口哨声；汽笛声<br>garment  n. （一件）衣服（外套、裙、袍<br>                等）<br>       （pl）服装<br>woollen  adj. 毛纺的；纯毛的（&lt;美&gt;woolen）<br>hesitate  vi.  犹豫；踌躇<br>uncomfortable  adj.  不舒服的；不安的；<br>                 不自在的<br>  uncomfortably  adv. 不舒服的；不自在地<br>troublesome  adj. 带来麻烦的；使人心烦的<br>wallet  n.  皮夹；钱包<br>outcome  n.  结果；效果<br>thief  n.  小偷；贼<br>handkerchief  n.  手帕；手绢；纸巾<br>△disguise  vt.  伪装；假扮；遮掩<br>           n.伪装<br>   △in disguise  伪装（的）；假扮（的）<br>mistaken  adj.  （见解或判断上）错误的；<br>              不正确的<br>brilliant  adj.  光辉灿烂的；杰出的；<br>            才华横溢的<br>classify  vt.  编排；分类；归类<br>remark  n.  谈论；言论；评述<br>        vt. &amp; vi.谈论；评论；说起<br>betray  vt.  显露出（本来面目）；背叛<br>upper  adj.  （位置或地位）较高的；<br>           级别较高的<br>extraordinary  adj.  不同寻常的；非凡的<br>condemn  vi.  谴责；使……注定<br>△gutter  n.  排水沟；阴沟；贫民区<br>properly  adv.  适当地；恰当地<br>pass…off as… （把某人）改变或冒充成……<br>△duchess  n.  公爵夫人；女公爵<br>ambassador  n.  大使；使节<br>acquaintance  n.  相识；了解；熟人<br>   make one’s acquaintance  结识；<br>                       与……相见<br>handful  n.  一把；少量<br>△amazement  n.  惊讶；惊愕<br>   △in amazement  震惊；惊讶<br>fortune  n.  机会；运气；大笔的钱<br>authentic  adj.  真实的；真正的；可信的；<br>             可靠的<br>generally speaking  一般来说<br>status  n.  身份；地位；职位<br>superior  adj.  优秀的；较高的；上级的<br>        n.上级；长官<br>in terms of…  就……来说；从……角度<br>△disapprove  vt. &amp; vi.  不赞成；反对；<br>                 认为不好<br>rob  vt.  抢劫；盗窃；剥夺<br>antique  adj.  古时的；（因古老、稀少而）<br>              珍贵的<br>        n. 文物；古董；古玩<br>musical  adj.  音乐的；喜爱音乐的<br>        n.音乐喜剧<br>stocking  n.  长袜<br>△believer  n.  信徒；教徒<br>Buddhism  n.  佛教<br>   △Buddhist  n.  佛教徒<br>              adj.佛教的<br>   △Buddha  n.  佛<br>△vowel  n.  元音；元音字母<br>△Pearce  皮尔斯（姓）<br>cookie  n.  饼干<br>teapot  n.  茶壶<br>cream  n.  奶油；面霜<br>nail  n.  指甲；钉子<br>show…in  带或领……进来<br>wax  n.  蜡；蜜蜡<br>     vt.上蜡<br>disk  n.  磁盘<br>△wax disk  旧式唱片<br>shabby  adj.  破旧的；寒酸的<br>△curtsy  vi. （also curtsey） 行屈膝礼<br>         n.（女子行的）屈膝礼<br>△shilling  n.  先令（1971年以前的英国货<br>            币单位，旧币的12便士）<br>referee  n.  裁判员；仲裁者<br>compromise  ni. &amp; vi.  妥协；折衷<br>horrible  adj.  可怕的；恐怖的<br>laundry  n.  洗衣店；洗衣房；<br>           （待洗的或洗好的）衣服<br>bathtub  n.  浴缸；澡盆<br>sob  vi.  啜泣；抽噎<br>     n.啜泣（声）；抽噎（声）<br>waist  n.  腰；腰部；腰围<br>vest  n.  背心；内衣<br>disgusting  adj.  使人反感的；令人厌恶的<br>once more  再一次<br>in need of  需要……<br>△heartily  adv.  尽情地；热心地；痛快地<br>overlook  vt.  俯视；忽视；不理会<br>alphabet  n.  字母表<br>△effective  adj.  有效的<br>fade  vi. &amp; vt.（使）褪色；减弱；逐渐消失<br>  fade out （声音、画面）逐渐模糊；渐淡</p>
+<h2 id="Book-8-Unit-5"><a href="#Book-8-Unit-5" class="headerlink" title="Book 8 Unit 5"></a>Book 8 Unit 5</h2><p>Unit 5</p>
+<p>△identify  vt.  确认；识别；鉴别<br>alternative  n.  可能的选择<br>           adj. 供选择的；其他的<br>△archaeology  n. 考古学(&lt;美&gt;archeology)<br>   △archaeological  adj.  考古学的；<br>      与考古学有关的 (&lt;美&gt;archeological)<br>   △archaeologist  n.  考古学家<br>                     (&lt;美&gt;archeologist)<br>starvation  n.  挨饿；饿死<br>tentative  adj.  试探性的；不确定的<br>accuracy  n.  精确；准确<br>△excavate  vt.  挖掘；发掘<br>   △excavation  n.  挖掘；发掘<br>interrupt  vt. &amp; vi.  打断……讲话；打岔；<br>                 暂时中断或中止<br>acute  adj.  有观察力的；敏锐的；严重的；<br>          深刻的<br>assume  vt.  假定；设想<br>regardless  adv.  不管；不顾<br>   regardless of  不管；不顾<br>mat  n.  席子；垫子<br>quilt  n.  被子；棉被<br>beast  n. 野兽<br>at most  至多；最多<br>centimetre  n.  厘米 (&lt;美&gt;centimeter)<br>sharpen  vi. &amp; vt.  （使）锋利；尖锐；清晰<br>   sharpener  n.  磨具；削具<br>cut up  切碎<br>△scrape  vt.  擦净；削平；磨光<br>   △scraper  n.  刮刀；刮削器<br>ample  adj.  足够的；充足的；富裕的<br>messy  adj.  凌乱的；脏的<br>primitive  adj.  原始的；远古的；简陋的<br>△bead  n.  小珠子；滴<br>botany  n.  植物学<br>   botanical  adj.  植物学的；<br>                与植物学有关的<br>analysis  n.  分析<br>seashell  n.  海贝壳<br>ripen  vt. &amp; vi.  使……成熟；成熟<br>category  n.  种类；类别；范畴<br>significance  n.  意义；意思；重要性；<br>              重要意义<br>somehow  adv.  以……方式；不知怎么地<br>systematic  adj.  有系统的；有计划的；<br>             有条理的<br>spit  vt. (spat, spit; spat, spit) 吐出（唾液、<br>                    食物等）<br>     vi.吐痰<br>delete  vt.  删；删除<br>album  n.  相册；集邮册；唱片<br>scratch  n. （刮、抓、划的）痕迹；搔；挠<br>       vt. 搔；抓；擦伤；刮坏<br>academy  n.  学院；学会；学术团体；院校<br>receptionist  n.  接待员；招待员<br>onion  n.  洋葱<br>kindergarten  n.  幼儿园<br>skateboard  n.  滑板<br>fed up with  受够了；饱受；厌烦<br>yogurt  n.  酸乳酷；酸奶<br>radioactive  adj.  放射性的；有辐射能的<br>   radioactivity  n.  放射性<br>division  n.  分割；划分；分配；分界线<br>BC  公元前<br>melon  n.  （各种）瓜<br>wrinkle  n.  皱纹<br>pulse  vi.  强烈而有规律地跳动；搏动<br>      n.脉搏；节拍<br>△vein  n.  血管；静脉<br>applaud  vi. &amp; vt.  鼓掌欢迎；赞赏<br>look ahead  向前看；为将来打算<br>howl  vt. &amp; vi.  嗥叫；叫喊；吼叫<br>accelerate  vi. &amp; vt.  加速；促进<br>spear  n.  矛；枪<br>arrest  vt.  逮捕；吸引<br>       n.逮捕；拘留<br>dizzy  adj.  晕眩的；昏乱的；<br>         使人发晕或困惑的<br>△eyebrow  n.  眉毛<br>△cheekbone  n.  颧骨<br>△arrowhead  n.  箭头<br>△axe  n.  斧；斧子<br>hammer  n.  铁锤；锤子<br>gay  adj.  快乐的；欢快的<br>   gaily  adv.  快乐地；轻松地<br>skilful  adj. 有技巧的；熟练的<br>         (&lt;.美&gt;skillful)<br>date back  追溯到……<br>punctuation  n.  标点符号<br>△worship  vt. &amp; vi.  崇拜；敬奉<br>           n.崇拜；敬神<br>△craftsmanship  n.  技艺；手艺；<br>                精工细作</p>
+]]></content>
+  </entry>
+  <entry>
+    <title>helloworld*2</title>
+    <url>/2020/03/helloworld-2/</url>
+    <content><![CDATA[<h2 id="这是用来放笔记的Blog哦。"><a href="#这是用来放笔记的Blog哦。" class="headerlink" title="这是用来放笔记的Blog哦。"></a>这是用来放笔记的Blog哦。</h2>]]></content>
+  </entry>
+  <entry>
+    <title>化学_化工流程</title>
+    <url>/2020/03/%E5%8C%96%E5%AD%A6-%E5%8C%96%E5%B7%A5%E6%B5%81%E7%A8%8B/</url>
+    <content><![CDATA[<h5 id="初步处理"><a href="#初步处理" class="headerlink" title="初步处理"></a>初步处理</h5><p><img src="https://raw.githubusercontent.com/weremexii/imgformarkdown/master/typora/202003/31/144438-593169.png" alt="1585637073526"></p>
+<h5 id="答题模板"><a href="#答题模板" class="headerlink" title="答题模板"></a>答题模板</h5><p><img src="https://raw.githubusercontent.com/weremexii/imgformarkdown/master/typora/202003/31/150931-125002.png" alt="1585638568186"></p>
+<p><img src="https://raw.githubusercontent.com/weremexii/imgformarkdown/master/typora/202003/31/151047-32063.png" alt="1585638609684"></p>
+<p><img src="https://raw.githubusercontent.com/weremexii/imgformarkdown/master/typora/202003/31/150955-878153.png" alt="1585638593248"></p>
+<p><img src="https://raw.githubusercontent.com/weremexii/imgformarkdown/master/typora/202003/31/151158-991377.png" alt="1585638685155"></p>
+<p><img src="https://raw.githubusercontent.com/weremexii/imgformarkdown/master/typora/202003/31/151245-970537.png" alt="1585638762359"></p>
+<h5 id="关注物质本身性质，不要漏掉"><a href="#关注物质本身性质，不要漏掉" class="headerlink" title="关注物质本身性质，不要漏掉"></a>关注物质本身性质，不要漏掉</h5><p><img src="https://raw.githubusercontent.com/weremexii/imgformarkdown/master/typora/202003/31/154401-580641.png" alt="1585640637112"></p>
+]]></content>
+  </entry>
+  <entry>
+    <title>化学错题</title>
+    <url>/2020/03/%E5%8C%96%E5%AD%A6%E9%94%99%E9%A2%98/</url>
+    <content><![CDATA[<h5 id="滴定，化学平衡"><a href="#滴定，化学平衡" class="headerlink" title="滴定，化学平衡"></a>滴定，化学平衡</h5><p><img src="https://raw.githubusercontent.com/weremexii/imgformarkdown/master/typora/202004/04/170948-570541.png" alt="1585991375498"></p>
+<h5 id="洗涤沉淀"><a href="#洗涤沉淀" class="headerlink" title="洗涤沉淀"></a>洗涤沉淀</h5><p><img src="https://raw.githubusercontent.com/weremexii/imgformarkdown/master/typora/202003/27/212944-104243.png" alt="1585315783825"></p>
+<h5 id="使用圆底烧瓶进行蒸馏"><a href="#使用圆底烧瓶进行蒸馏" class="headerlink" title="使用圆底烧瓶进行蒸馏"></a>使用圆底烧瓶进行蒸馏</h5><p><img src="https://raw.githubusercontent.com/weremexii/imgformarkdown/master/typora/202003/30/110959-912282.png" alt="1585537796189"></p>
+<h5 id="从反应本身控制温度"><a href="#从反应本身控制温度" class="headerlink" title="从反应本身控制温度"></a>从反应本身控制温度</h5><p><img src="https://raw.githubusercontent.com/weremexii/imgformarkdown/master/typora/202003/30/111713-210318.png" alt="1585538231064"></p>
+<p><img src="https://raw.githubusercontent.com/weremexii/imgformarkdown/master/typora/202003/30/111729-738274.png" alt="1585538241136"></p>
+<p><img src="https://raw.githubusercontent.com/weremexii/imgformarkdown/master/typora/202003/30/111744-16933.png" alt="1585538256122"></p>
+<h5 id="有机合成路线"><a href="#有机合成路线" class="headerlink" title="有机合成路线"></a>有机合成路线</h5><p><img src="https://raw.githubusercontent.com/weremexii/imgformarkdown/master/typora/202003/27/213759-932322.png" alt="image_28"></p>
+<p><img src="https://raw.githubusercontent.com/weremexii/imgformarkdown/master/typora/202003/27/213920-914782.png" alt="image_30"></p>
+<p><img src="https://raw.githubusercontent.com/weremexii/imgformarkdown/master/typora/202003/27/213930-440874.png" alt="image_31"></p>
+]]></content>
+  </entry>
+  <entry>
+    <title>生物错题</title>
+    <url>/2020/03/%E7%94%9F%E7%89%A9%E9%94%99%E9%A2%98/</url>
+    <content><![CDATA[<h4 id="开封市2020高三模拟"><a href="#开封市2020高三模拟" class="headerlink" title="开封市2020高三模拟"></a>开封市2020高三模拟</h4><p><img src="https://raw.githubusercontent.com/weremexii/imgformarkdown/master/typora/202003/27/210125-701410.png" alt="1585314085051"></p>
+<p><strong>长眼</strong></p>
+<p>6.B．无机环境中的物质可以通过多种途径被生物群落反复利用（X）</p>
+<p>并不是无机环境中所有物质都可以被生物群落反复利用，只有那些生物可以利用的元素是可以被循环反复利用的，这就是生态系统物质循环理论的来源。-老师</p>
+<p><img src="https://raw.githubusercontent.com/weremexii/imgformarkdown/master/typora/202003/27/210430-614773.png" alt="1585314264623"></p>
+<p>ap或aP ；3个 </p>
+<p>注意 “种子胚”</p>
+<p><img src="https://raw.githubusercontent.com/weremexii/imgformarkdown/master/typora/202003/27/210833-29847.png" alt="image_26"></p>
+<p><img src="https://raw.githubusercontent.com/weremexii/imgformarkdown/master/typora/202003/27/210820-181316.png" alt="1585314498408"></p>
+<p><img src="https://raw.githubusercontent.com/weremexii/imgformarkdown/master/typora/202003/27/210906-519890.png" alt="1585314546427"></p>
+<h3 id="武汉3月质检"><a href="#武汉3月质检" class="headerlink" title="武汉3月质检"></a>武汉3月质检</h3><p><img src="https://raw.githubusercontent.com/weremexii/imgformarkdown/master/typora/202003/30/113600-209581.png" alt="1585539359882"></p>
+<p>注意纵坐标的0值</p>
+<h5 id="神经冲动的传递中的物质基础和结构基础"><a href="#神经冲动的传递中的物质基础和结构基础" class="headerlink" title="神经冲动的传递中的物质基础和结构基础"></a>神经冲动的传递中的物质基础和结构基础</h5><p><img src="https://raw.githubusercontent.com/weremexii/imgformarkdown/master/typora/202003/30/114300-73955.png" alt="1585539778832"></p>
+<h5 id="实验设计参考"><a href="#实验设计参考" class="headerlink" title="实验设计参考"></a>实验设计参考</h5><p><img src="https://raw.githubusercontent.com/weremexii/imgformarkdown/master/typora/202003/30/115155-713624.png" alt="1585540313243"></p>
+<h4 id="0313C"><a href="#0313C" class="headerlink" title="0313C"></a>0313C</h4><p><img src="https://raw.githubusercontent.com/weremexii/imgformarkdown/master/typora/202004/03/170653-618063.png" alt="1585904810361"></p>
+<p>参见黑色素合成-苯丙氨酸转化成酪氨酸</p>
+]]></content>
   </entry>
   <entry>
     <title>生物—_选修一</title>
@@ -255,106 +315,46 @@
 ]]></content>
   </entry>
   <entry>
-    <title>English Exercises</title>
-    <url>/2020/03/English-Exercises/</url>
-    <content><![CDATA[<h5 id="阅读理解"><a href="#阅读理解" class="headerlink" title="阅读理解"></a>阅读理解</h5><p><img src="https://raw.githubusercontent.com/weremexii/imgformarkdown/master/typora/202003/31/164914-466275.png" alt="1585644551593"></p>
-]]></content>
-  </entry>
-  <entry>
-    <title>化学_化工流程</title>
-    <url>/2020/03/%E5%8C%96%E5%AD%A6-%E5%8C%96%E5%B7%A5%E6%B5%81%E7%A8%8B/</url>
-    <content><![CDATA[<h5 id="初步处理"><a href="#初步处理" class="headerlink" title="初步处理"></a>初步处理</h5><p><img src="https://raw.githubusercontent.com/weremexii/imgformarkdown/master/typora/202003/31/144438-593169.png" alt="1585637073526"></p>
-<h5 id="答题模板"><a href="#答题模板" class="headerlink" title="答题模板"></a>答题模板</h5><p><img src="https://raw.githubusercontent.com/weremexii/imgformarkdown/master/typora/202003/31/150931-125002.png" alt="1585638568186"></p>
-<p><img src="https://raw.githubusercontent.com/weremexii/imgformarkdown/master/typora/202003/31/151047-32063.png" alt="1585638609684"></p>
-<p><img src="https://raw.githubusercontent.com/weremexii/imgformarkdown/master/typora/202003/31/150955-878153.png" alt="1585638593248"></p>
-<p><img src="https://raw.githubusercontent.com/weremexii/imgformarkdown/master/typora/202003/31/151158-991377.png" alt="1585638685155"></p>
-<p><img src="https://raw.githubusercontent.com/weremexii/imgformarkdown/master/typora/202003/31/151245-970537.png" alt="1585638762359"></p>
-<h5 id="关注物质本身性质，不要漏掉"><a href="#关注物质本身性质，不要漏掉" class="headerlink" title="关注物质本身性质，不要漏掉"></a>关注物质本身性质，不要漏掉</h5><p><img src="https://raw.githubusercontent.com/weremexii/imgformarkdown/master/typora/202003/31/154401-580641.png" alt="1585640637112"></p>
-]]></content>
-  </entry>
-  <entry>
-    <title>生物错题</title>
-    <url>/2020/03/%E7%94%9F%E7%89%A9%E9%94%99%E9%A2%98/</url>
-    <content><![CDATA[<h4 id="开封市2020高三模拟"><a href="#开封市2020高三模拟" class="headerlink" title="开封市2020高三模拟"></a>开封市2020高三模拟</h4><p><img src="https://raw.githubusercontent.com/weremexii/imgformarkdown/master/typora/202003/27/210125-701410.png" alt="1585314085051"></p>
-<p><strong>长眼</strong></p>
-<p>6.B．无机环境中的物质可以通过多种途径被生物群落反复利用（X）</p>
-<p>并不是无机环境中所有物质都可以被生物群落反复利用，只有那些生物可以利用的元素是可以被循环反复利用的，这就是生态系统物质循环理论的来源。-老师</p>
-<p><img src="https://raw.githubusercontent.com/weremexii/imgformarkdown/master/typora/202003/27/210430-614773.png" alt="1585314264623"></p>
-<p>ap或aP ；3个 </p>
-<p>注意 “种子胚”</p>
-<p><img src="https://raw.githubusercontent.com/weremexii/imgformarkdown/master/typora/202003/27/210833-29847.png" alt="image_26"></p>
-<p><img src="https://raw.githubusercontent.com/weremexii/imgformarkdown/master/typora/202003/27/210820-181316.png" alt="1585314498408"></p>
-<p><img src="https://raw.githubusercontent.com/weremexii/imgformarkdown/master/typora/202003/27/210906-519890.png" alt="1585314546427"></p>
-<h3 id="武汉3月质检"><a href="#武汉3月质检" class="headerlink" title="武汉3月质检"></a>武汉3月质检</h3><p><img src="https://raw.githubusercontent.com/weremexii/imgformarkdown/master/typora/202003/30/113600-209581.png" alt="1585539359882"></p>
-<p>注意纵坐标的0值</p>
-<h5 id="神经冲动的传递中的物质基础和结构基础"><a href="#神经冲动的传递中的物质基础和结构基础" class="headerlink" title="神经冲动的传递中的物质基础和结构基础"></a>神经冲动的传递中的物质基础和结构基础</h5><p><img src="https://raw.githubusercontent.com/weremexii/imgformarkdown/master/typora/202003/30/114300-73955.png" alt="1585539778832"></p>
-<h5 id="实验设计参考"><a href="#实验设计参考" class="headerlink" title="实验设计参考"></a>实验设计参考</h5><p><img src="https://raw.githubusercontent.com/weremexii/imgformarkdown/master/typora/202003/30/115155-713624.png" alt="1585540313243"></p>
-<h4 id="0313C"><a href="#0313C" class="headerlink" title="0313C"></a>0313C</h4><p><img src="https://raw.githubusercontent.com/weremexii/imgformarkdown/master/typora/202004/03/170653-618063.png" alt="1585904810361"></p>
-<p>参见黑色素合成-苯丙氨酸转化成酪氨酸</p>
-]]></content>
-  </entry>
-  <entry>
-    <title>化学错题</title>
-    <url>/2020/03/%E5%8C%96%E5%AD%A6%E9%94%99%E9%A2%98/</url>
-    <content><![CDATA[<h5 id="滴定，化学平衡"><a href="#滴定，化学平衡" class="headerlink" title="滴定，化学平衡"></a>滴定，化学平衡</h5><p><img src="https://raw.githubusercontent.com/weremexii/imgformarkdown/master/typora/202004/04/170948-570541.png" alt="1585991375498"></p>
-<h5 id="洗涤沉淀"><a href="#洗涤沉淀" class="headerlink" title="洗涤沉淀"></a>洗涤沉淀</h5><p><img src="https://raw.githubusercontent.com/weremexii/imgformarkdown/master/typora/202003/27/212944-104243.png" alt="1585315783825"></p>
-<h5 id="使用圆底烧瓶进行蒸馏"><a href="#使用圆底烧瓶进行蒸馏" class="headerlink" title="使用圆底烧瓶进行蒸馏"></a>使用圆底烧瓶进行蒸馏</h5><p><img src="https://raw.githubusercontent.com/weremexii/imgformarkdown/master/typora/202003/30/110959-912282.png" alt="1585537796189"></p>
-<h5 id="从反应本身控制温度"><a href="#从反应本身控制温度" class="headerlink" title="从反应本身控制温度"></a>从反应本身控制温度</h5><p><img src="https://raw.githubusercontent.com/weremexii/imgformarkdown/master/typora/202003/30/111713-210318.png" alt="1585538231064"></p>
-<p><img src="https://raw.githubusercontent.com/weremexii/imgformarkdown/master/typora/202003/30/111729-738274.png" alt="1585538241136"></p>
-<p><img src="https://raw.githubusercontent.com/weremexii/imgformarkdown/master/typora/202003/30/111744-16933.png" alt="1585538256122"></p>
-<h5 id="有机合成路线"><a href="#有机合成路线" class="headerlink" title="有机合成路线"></a>有机合成路线</h5><p><img src="https://raw.githubusercontent.com/weremexii/imgformarkdown/master/typora/202003/27/213759-932322.png" alt="image_28"></p>
-<p><img src="https://raw.githubusercontent.com/weremexii/imgformarkdown/master/typora/202003/27/213920-914782.png" alt="image_30"></p>
-<p><img src="https://raw.githubusercontent.com/weremexii/imgformarkdown/master/typora/202003/27/213930-440874.png" alt="image_31"></p>
-]]></content>
-  </entry>
-  <entry>
-    <title>Book 8 Unit 3~5</title>
-    <url>/2020/03/B8U3-5/</url>
-    <content><![CDATA[<p>Unit 3</p>
-<p>△amphibious  adj.  两栖（类）的<br>△George Stephenson  乔治·斯蒂芬森<br>        （英国发明家，蒸汽机的发明人）<br>patent  n.  专利证书；专利权<br>call up  给……打电话<br>courtyard  n.  院子；庭院；天井<br>now and then  偶尔；有时<br>walnut  n.  胡桃；胡桃木<br>distinguish  vi. &amp; vt.  显示……的差别；<br>                使……有所不同；辨别<br>merciful  adj.  宽大的；仁慈的；慈悲的<br>product  n.  产品<br>powder  n.  粉末；火药<br>set about  开始；着手<br>perfume  n.  香水；香味<br>stainless  adj.无锈的；不锈的；没有污点的<br>△jelly  n.  果冻；果冻状物<br>cube  n.  立方体；立方<br>   cubic  adj.  立方的<br>abrupt  adj.  突然的；意外的<br>   abruptly  adv.  突然地；唐突地<br>convenient  adj.  便利的；方便的；就近的<br>caution  n.  小心；谨慎<br>expectation  n.  预料；期待；期望<br>passive  adj.  被动的；消极的；<br>           被动语态的<br>merry  adj.  愉快的；高兴的<br>   merrily  adv.  高兴地；愉快地<br>seize  vt.  抓住；捉住；夺<br>△recognition  n.  认出；认可；承认<br>criterion  n.  （评判的）标准；尺度<br>△claim  n. &amp; vt.  要求；声称；主张<br>valid  adj.  有效的；确凿的<br>file  n.  文件；档案；文件夹<br>     vt. 提交；将……归档<br>ripe  adj.  熟的；成熟的<br>string  n.  线；绳子；一串<br>glue  n.  胶；胶水<br>      vt.粘贴；粘合<br>△rod  n.  杆；棒<br>freezing  adj.  冰冻的；严寒的<br>greengrocer  n.  果蔬商<br>          （pl）蔬菜水果店<br>identification  n.  鉴定；辨认；确定；<br>              身份证明<br>directory  n.  电话簿；商行名录<br>dial  vt.  拨（电话）<br>rainfall  n.  降雨<br>△courtroom  n.  法庭；审判室<br>innocent  adj.  清白的；无罪的；天真的<br>lantern  n.  灯笼；提灯<br>bear  vt.  忍受；忍耐；负担<br>jam  n.  堵塞；阻塞；果酱<br>△Alexander Graham<br>            亚历山大·格雷厄姆·贝尔<br>△microphone  n.  麦克风；话筒<br>forehead  n.  额头<br>beaten track 被踩出来的路；常规；惯例<br>△occasionally  adv.  偶然地；不时地<br>dive into  迅速把手伸入；一心投入<br>dynamic  adj.  充满活力的；精力充沛的；<br>            动态的；发展变化的<br>set out (to do)  开始（做）<br>△multiple adj. 多种的；多样的；多类型的<br>           n.倍数<br>△Morse  莫尔斯电码<br>dot  n.  点；小圆点<br>    vt. 以小圆点标出；分散<br>tap  vt.  轻打；轻拍；轻敲<br>     n.轻轻地敲击（声）；（水）龙头<br>wire  n.  金属丝；电线<br>straw  n.  稻草；麦秆；饮料吸管<br>△reproduce  vt.  复制；<br>               再现……的形象或声音<br>current  n.  （水或气）流；电流<br>        adj. 现在的；当前的<br>helicopter  n.  直升飞机<br>triangle  n.  三角形；三角形物体<br>△tetrahedron  n.  四面体<br>stable  adj.  稳固的；稳定的；安定的<br>△invaluable  adj.  无价的；极宝贵的<br>associate  vt.  联想；联系<br>         n.同伴；伙伴<br>practical  adj.  实际的；实践的；实用的<br>△James Dyson  詹姆斯·戴森（英国发明家）<br>refrigerator  n.  冰箱<br>court  n.  法庭；法院；朝廷<br>extension  n.  电话分机；扩大；延伸<br>hang on  不挂断；稍等；紧紧握住<br>out of order  次序颠倒；发生故障<br>get through  设法联系上（尤指打通电话）；<br>           （设法）做完；通过<br>ring back  回复电话<br>ring off  挂断电话<br>version  n.  版本；译本<br>competence  n.  能力；胜利；本领<br>   △competent  n.  能胜任的；有能力的；<br>                 称职的<br>jeep  n.  吉普车<br>personnel  n.  人力资源；人事部；全体人员</p>
-<p>Unit 4</p>
-<p>△Pygmalion  n.  皮格马利翁（希腊神话）<br>△George Bernard Shaw  乔治·伯纳德·萧 （也译萧伯纳，英国剧作家）<br>adaptation  n.  适应（性）；改编本<br>classic  adj.  经典的；第一流的<br>        n.经典著作<br>caption  n.  （图片上的）说明文字；<br>           （电视、电影）字幕；<br>           （杂志等文章的）标题；韪<br>plot  n.  情节；阴谋<br>professor  n.  教授<br>△Higgins  希金斯 （姓）<br>△phonetics  n.  语音学<br>△colonel  n.  （陆军）上校<br>△Pickering 皮克林（姓）<br>△fateful  adj.  重要的；决定性的；<br>            命中注定的<br>whistle  vi.  吹口哨；发出汽笛声<br>        n.口哨声；汽笛声<br>garment  n. （一件）衣服（外套、裙、袍<br>                等）<br>       （pl）服装<br>woollen  adj. 毛纺的；纯毛的（&lt;美&gt;woolen）<br>hesitate  vi.  犹豫；踌躇<br>uncomfortable  adj.  不舒服的；不安的；<br>                 不自在的<br>  uncomfortably  adv. 不舒服的；不自在地<br>troublesome  adj. 带来麻烦的；使人心烦的<br>wallet  n.  皮夹；钱包<br>outcome  n.  结果；效果<br>thief  n.  小偷；贼<br>handkerchief  n.  手帕；手绢；纸巾<br>△disguise  vt.  伪装；假扮；遮掩<br>           n.伪装<br>   △in disguise  伪装（的）；假扮（的）<br>mistaken  adj.  （见解或判断上）错误的；<br>              不正确的<br>brilliant  adj.  光辉灿烂的；杰出的；<br>            才华横溢的<br>classify  vt.  编排；分类；归类<br>remark  n.  谈论；言论；评述<br>        vt. &amp; vi.谈论；评论；说起<br>betray  vt.  显露出（本来面目）；背叛<br>upper  adj.  （位置或地位）较高的；<br>           级别较高的<br>extraordinary  adj.  不同寻常的；非凡的<br>condemn  vi.  谴责；使……注定<br>△gutter  n.  排水沟；阴沟；贫民区<br>properly  adv.  适当地；恰当地<br>pass…off as… （把某人）改变或冒充成……<br>△duchess  n.  公爵夫人；女公爵<br>ambassador  n.  大使；使节<br>acquaintance  n.  相识；了解；熟人<br>   make one’s acquaintance  结识；<br>                       与……相见<br>handful  n.  一把；少量<br>△amazement  n.  惊讶；惊愕<br>   △in amazement  震惊；惊讶<br>fortune  n.  机会；运气；大笔的钱<br>authentic  adj.  真实的；真正的；可信的；<br>             可靠的<br>generally speaking  一般来说<br>status  n.  身份；地位；职位<br>superior  adj.  优秀的；较高的；上级的<br>        n.上级；长官<br>in terms of…  就……来说；从……角度<br>△disapprove  vt. &amp; vi.  不赞成；反对；<br>                 认为不好<br>rob  vt.  抢劫；盗窃；剥夺<br>antique  adj.  古时的；（因古老、稀少而）<br>              珍贵的<br>        n. 文物；古董；古玩<br>musical  adj.  音乐的；喜爱音乐的<br>        n.音乐喜剧<br>stocking  n.  长袜<br>△believer  n.  信徒；教徒<br>Buddhism  n.  佛教<br>   △Buddhist  n.  佛教徒<br>              adj.佛教的<br>   △Buddha  n.  佛<br>△vowel  n.  元音；元音字母<br>△Pearce  皮尔斯（姓）<br>cookie  n.  饼干<br>teapot  n.  茶壶<br>cream  n.  奶油；面霜<br>nail  n.  指甲；钉子<br>show…in  带或领……进来<br>wax  n.  蜡；蜜蜡<br>     vt.上蜡<br>disk  n.  磁盘<br>△wax disk  旧式唱片<br>shabby  adj.  破旧的；寒酸的<br>△curtsy  vi. （also curtsey） 行屈膝礼<br>         n.（女子行的）屈膝礼<br>△shilling  n.  先令（1971年以前的英国货<br>            币单位，旧币的12便士）<br>referee  n.  裁判员；仲裁者<br>compromise  ni. &amp; vi.  妥协；折衷<br>horrible  adj.  可怕的；恐怖的<br>laundry  n.  洗衣店；洗衣房；<br>           （待洗的或洗好的）衣服<br>bathtub  n.  浴缸；澡盆<br>sob  vi.  啜泣；抽噎<br>     n.啜泣（声）；抽噎（声）<br>waist  n.  腰；腰部；腰围<br>vest  n.  背心；内衣<br>disgusting  adj.  使人反感的；令人厌恶的<br>once more  再一次<br>in need of  需要……<br>△heartily  adv.  尽情地；热心地；痛快地<br>overlook  vt.  俯视；忽视；不理会<br>alphabet  n.  字母表<br>△effective  adj.  有效的<br>fade  vi. &amp; vt.（使）褪色；减弱；逐渐消失<br>  fade out （声音、画面）逐渐模糊；渐淡</p>
-<h2 id="Book-8-Unit-5"><a href="#Book-8-Unit-5" class="headerlink" title="Book 8 Unit 5"></a>Book 8 Unit 5</h2><p>Unit 5</p>
-<p>△identify  vt.  确认；识别；鉴别<br>alternative  n.  可能的选择<br>           adj. 供选择的；其他的<br>△archaeology  n. 考古学(&lt;美&gt;archeology)<br>   △archaeological  adj.  考古学的；<br>      与考古学有关的 (&lt;美&gt;archeological)<br>   △archaeologist  n.  考古学家<br>                     (&lt;美&gt;archeologist)<br>starvation  n.  挨饿；饿死<br>tentative  adj.  试探性的；不确定的<br>accuracy  n.  精确；准确<br>△excavate  vt.  挖掘；发掘<br>   △excavation  n.  挖掘；发掘<br>interrupt  vt. &amp; vi.  打断……讲话；打岔；<br>                 暂时中断或中止<br>acute  adj.  有观察力的；敏锐的；严重的；<br>          深刻的<br>assume  vt.  假定；设想<br>regardless  adv.  不管；不顾<br>   regardless of  不管；不顾<br>mat  n.  席子；垫子<br>quilt  n.  被子；棉被<br>beast  n. 野兽<br>at most  至多；最多<br>centimetre  n.  厘米 (&lt;美&gt;centimeter)<br>sharpen  vi. &amp; vt.  （使）锋利；尖锐；清晰<br>   sharpener  n.  磨具；削具<br>cut up  切碎<br>△scrape  vt.  擦净；削平；磨光<br>   △scraper  n.  刮刀；刮削器<br>ample  adj.  足够的；充足的；富裕的<br>messy  adj.  凌乱的；脏的<br>primitive  adj.  原始的；远古的；简陋的<br>△bead  n.  小珠子；滴<br>botany  n.  植物学<br>   botanical  adj.  植物学的；<br>                与植物学有关的<br>analysis  n.  分析<br>seashell  n.  海贝壳<br>ripen  vt. &amp; vi.  使……成熟；成熟<br>category  n.  种类；类别；范畴<br>significance  n.  意义；意思；重要性；<br>              重要意义<br>somehow  adv.  以……方式；不知怎么地<br>systematic  adj.  有系统的；有计划的；<br>             有条理的<br>spit  vt. (spat, spit; spat, spit) 吐出（唾液、<br>                    食物等）<br>     vi.吐痰<br>delete  vt.  删；删除<br>album  n.  相册；集邮册；唱片<br>scratch  n. （刮、抓、划的）痕迹；搔；挠<br>       vt. 搔；抓；擦伤；刮坏<br>academy  n.  学院；学会；学术团体；院校<br>receptionist  n.  接待员；招待员<br>onion  n.  洋葱<br>kindergarten  n.  幼儿园<br>skateboard  n.  滑板<br>fed up with  受够了；饱受；厌烦<br>yogurt  n.  酸乳酷；酸奶<br>radioactive  adj.  放射性的；有辐射能的<br>   radioactivity  n.  放射性<br>division  n.  分割；划分；分配；分界线<br>BC  公元前<br>melon  n.  （各种）瓜<br>wrinkle  n.  皱纹<br>pulse  vi.  强烈而有规律地跳动；搏动<br>      n.脉搏；节拍<br>△vein  n.  血管；静脉<br>applaud  vi. &amp; vt.  鼓掌欢迎；赞赏<br>look ahead  向前看；为将来打算<br>howl  vt. &amp; vi.  嗥叫；叫喊；吼叫<br>accelerate  vi. &amp; vt.  加速；促进<br>spear  n.  矛；枪<br>arrest  vt.  逮捕；吸引<br>       n.逮捕；拘留<br>dizzy  adj.  晕眩的；昏乱的；<br>         使人发晕或困惑的<br>△eyebrow  n.  眉毛<br>△cheekbone  n.  颧骨<br>△arrowhead  n.  箭头<br>△axe  n.  斧；斧子<br>hammer  n.  铁锤；锤子<br>gay  adj.  快乐的；欢快的<br>   gaily  adv.  快乐地；轻松地<br>skilful  adj. 有技巧的；熟练的<br>         (&lt;.美&gt;skillful)<br>date back  追溯到……<br>punctuation  n.  标点符号<br>△worship  vt. &amp; vi.  崇拜；敬奉<br>           n.崇拜；敬神<br>△craftsmanship  n.  技艺；手艺；<br>                精工细作</p>
-]]></content>
-  </entry>
-  <entry>
-    <title>T1</title>
-    <url>/2020/03/T1/</url>
-    <content><![CDATA[<h2 id="稍微试一试"><a href="#稍微试一试" class="headerlink" title="稍微试一试"></a>稍微试一试</h2><p><img src="https://raw.githubusercontent.com/weremexii/imgformarkdown/master/typora/202003/27/153053-760596.png" alt="1585294248537"></p>
-<p>这是长郡中学的21导数题的老师解析手稿，好看吗？</p>
-]]></content>
-  </entry>
-  <entry>
-    <title>clonetest</title>
-    <url>/2020/03/clonetest/</url>
-    <content><![CDATA[<p>刚才看了Github的官方文档，熟悉一下git的工作流程。<br>[<a href="https://guides.github.com/activities/hello-world/]" target="_blank" rel="noopener">https://guides.github.com/activities/hello-world/]</a></p>
+    <title>Fusion 12 获取序列号</title>
+    <url>/2020/09/tryfusion12/</url>
+    <content><![CDATA[<p>在macOS上使用虚拟机软件，不外乎是Parallels，Fusion或者VisualBox。Paralles以流畅到极致的Windows体验著称，但虚拟的其他系统体验却相形见绌。VisualBox则被称为虚拟拖拉机，体验可见一斑（然而博主却在类似MuMu模拟器之类的Android虚拟机软件中看到VisualBox）。虚拟Linux系系统就选Fusion了。</p>
+<p>碰巧的是，vmware在8月<a href="https://blogs.vmware.com/teamfusion/2020/08/announcing-fusion-12-and-workstation-16.html" target="_blank" rel="noopener">发布Fusion 12</a>，并更新它的授权体系，允许免费的个人使用。这意味这博主不再需要cracked version啦，可以名正言顺地白嫖啦。</p>
+<p>PS:发布博文后，过了大概半个月才给出<a href="https://my.vmware.com/web/vmware/downloads/info/slug/desktop_end_user_computing/vmware_fusion/12_0" target="_blank" rel="noopener">下载地址</a>。</p>
+<p>正文开始</p>
+<h3 id="获取序列号"><a href="#获取序列号" class="headerlink" title="获取序列号"></a>获取序列号</h3><p>即便vmware放出个人版免费使用，也逃不了注册账户才能获得软件使用的序列号（安装的fusion 12有试用期，必须输入序列号才能解除试用）。值得注意的是，vmware的产品授权有着类似于AppStore的地区区别（国区美区这样的）。仔细来讲，一个账户可以拥有同时不同地区同一个软件的授权，地区看的是你登录vmware时的IP地址。</p>
+<p>博主在这里被坑了一波，我默认的代理节点为香港，通过代理登录vmware账户，点击<code>上述</code>下载页面的<code>Get Your License Key</code>再点击<code>My VMware License Key</code>，会跳转到vSphere Hypervisor的授权界面。几番尝试，博主关掉代理重新登录（建议退出登录后清除cookie再登录）,重复上述操作，跳转到了404。看来不同地区优惠不一样啊，抱着这样的想法，博主挂上了美国的代理。</p>
+<p>当然，在美国代理下上上述操作也不一定能拿到序列号，毕竟你并没有拿过序列号，My License Key中不一定会有。所幸博主在一个<a href="https://www.macrumors.com/2020/09/15/vmware-fusion-12-available/" target="_blank" rel="noopener">新闻页面</a>找到了Fusion 12的<a href="https://my.vmware.com/web/vmware/evalcenter?p=fusion-player-personal" target="_blank" rel="noopener">授权地址</a>（类似于上述的那个vSphere Hypervisor），点击Registrate，获得序列号（请全程美国代理）</p>
 ]]></content>
       <tags>
-        <tag>git</tag>
+        <tag>Fusion</tag>
       </tags>
   </entry>
   <entry>
-    <title>helloworld*2</title>
-    <url>/2020/03/helloworld-2/</url>
-    <content><![CDATA[<h2 id="这是用来放笔记的Blog哦。"><a href="#这是用来放笔记的Blog哦。" class="headerlink" title="这是用来放笔记的Blog哦。"></a>这是用来放笔记的Blog哦。</h2>]]></content>
-  </entry>
-  <entry>
-    <title>Hello World</title>
-    <url>/2020/03/hello-world/</url>
-    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html" target="_blank" rel="noopener">Deployment</a></p>
+    <title>macOS下VScode的debug配置</title>
+    <url>/2020/10/macOS%E4%B8%8BVScode%E7%9A%84debug%E9%85%8D%E7%BD%AE/</url>
+    <content><![CDATA[<h3 id="一句话总结"><a href="#一句话总结" class="headerlink" title="一句话总结"></a>一句话总结</h3><p>在网上找了许多教程,到最后发现跟着vscode自动生成的配置+一个扩展就能实现我的需求.</p>
+<h3 id="我的需求"><a href="#我的需求" class="headerlink" title="我的需求"></a>我的需求</h3><p>在VSCode内进行debug操作,并允许我在其内置终端给程序输入.</p>
+<h3 id="解决方法"><a href="#解决方法" class="headerlink" title="解决方法"></a>解决方法</h3><ol start="0">
+<li><p>安装扩展CodeLLDB.</p>
+</li>
+<li><p>了解VSCode的编译(build)与调试(debug)配置方式</p>
+<p> VSCode在工作区的每个根文件夹下的.vscode文件夹放置build与debug配置文件.虽然不严谨,但可以把tasks.json当作build的配置文件,launch.json当作debug的配置文件.</p>
+</li>
+<li><p>在第一次build(快捷键shift+command+B)时会弹出列表选择编译命令,不明白的话就选第一个.第一次debug(快捷键F5)也是如此,会弹出列表选择调试方式,选择lldb launch.</p>
+</li>
+<li><p>在选择build或debug的选项后,都打开相应的配置文件.tasks.json的自动配置基本正确,lanuch.json中,需要将program项的值改为tasks.json中args数组中紧接字符串-o的字符串(类似于<code>${fileDirname}/${fileBasenameNoExtension}</code>)</p>
+<p> 这样,debug时就可以直接使用build生成的可执行文件了.</p>
+</li>
+<li><p>在launch的配置中可以加入一项</p>
+<pre><code>“preLaunchTask”: “(tasks.json里配置项label的值)”</code></pre><p> 这样,在每次debug前都会调用build来生成可执行文件,再debug.</p>
+</li>
+</ol>
 ]]></content>
+      <tags>
+        <tag>VSCode</tag>
+        <tag>macOS</tag>
+        <tag>debug</tag>
+        <tag>lldb</tag>
+      </tags>
   </entry>
 </search>
