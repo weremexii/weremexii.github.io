@@ -1,69 +1,77 @@
 <?xml version="1.0" encoding="utf-8"?>
-<search>
-  <entry>
-    <title>Hello World</title>
-    <url>/2020/03/hello-world/</url>
-    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html" target="_blank" rel="noopener">Deployment</a></p>
-]]></content>
-  </entry>
-  <entry>
-    <title>helloworld*2</title>
-    <url>/2020/03/helloworld-2/</url>
-    <content><![CDATA[<h2 id="这是用来放笔记的Blog哦。"><a href="#这是用来放笔记的Blog哦。" class="headerlink" title="这是用来放笔记的Blog哦。"></a>这是用来放笔记的Blog哦。</h2>]]></content>
-  </entry>
-  <entry>
-    <title>Fusion 12 获取序列号</title>
-    <url>/2020/09/tryfusion12/</url>
-    <content><![CDATA[<p>在macOS上使用虚拟机软件，不外乎是Parallels，Fusion或者VisualBox。Paralles以流畅到极致的Windows体验著称，但虚拟的其他系统体验却相形见绌。VisualBox则被称为虚拟拖拉机，体验可见一斑（然而博主却在类似MuMu模拟器之类的Android虚拟机软件中看到VisualBox）。虚拟Linux系系统就选Fusion了。</p>
-<p>碰巧的是，vmware在8月<a href="https://blogs.vmware.com/teamfusion/2020/08/announcing-fusion-12-and-workstation-16.html" target="_blank" rel="noopener">发布Fusion 12</a>，并更新它的授权体系，允许免费的个人使用。这意味这博主不再需要cracked version啦，可以名正言顺地白嫖啦。</p>
-<p>PS:发布博文后，过了大概半个月才给出<a href="https://my.vmware.com/web/vmware/downloads/info/slug/desktop_end_user_computing/vmware_fusion/12_0" target="_blank" rel="noopener">下载地址</a>。</p>
-<p>正文开始</p>
-<h3 id="获取序列号"><a href="#获取序列号" class="headerlink" title="获取序列号"></a>获取序列号</h3><p>即便vmware放出个人版免费使用，也逃不了注册账户才能获得软件使用的序列号（安装的fusion 12有试用期，必须输入序列号才能解除试用）。值得注意的是，vmware的产品授权有着类似于AppStore的地区区别（国区美区这样的）。仔细来讲，一个账户可以拥有同时不同地区同一个软件的授权，地区看的是你登录vmware时的IP地址。</p>
-<p>博主在这里被坑了一波，我默认的代理节点为香港，通过代理登录vmware账户，点击<code>上述</code>下载页面的<code>Get Your License Key</code>再点击<code>My VMware License Key</code>，会跳转到vSphere Hypervisor的授权界面。几番尝试，博主关掉代理重新登录（建议退出登录后清除cookie再登录）,重复上述操作，跳转到了404。看来不同地区优惠不一样啊，抱着这样的想法，博主挂上了美国的代理。</p>
-<p>当然，在美国代理下上上述操作也不一定能拿到序列号，毕竟你并没有拿过序列号，My License Key中不一定会有。所幸博主在一个<a href="https://www.macrumors.com/2020/09/15/vmware-fusion-12-available/" target="_blank" rel="noopener">新闻页面</a>找到了Fusion 12的<a href="https://my.vmware.com/web/vmware/evalcenter?p=fusion-player-personal" target="_blank" rel="noopener">授权地址</a>（类似于上述的那个vSphere Hypervisor），点击Registrate，获得序列号（请全程美国代理）</p>
-]]></content>
-      <tags>
-        <tag>Fusion</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>macOS下VScode的debug配置</title>
-    <url>/2020/10/macOS%E4%B8%8BVScode%E7%9A%84debug%E9%85%8D%E7%BD%AE/</url>
-    <content><![CDATA[<h3 id="一句话总结"><a href="#一句话总结" class="headerlink" title="一句话总结"></a>一句话总结</h3><p>在网上找了许多教程,到最后发现跟着vscode自动生成的配置+一个扩展就能实现我的需求.</p>
-<h3 id="我的需求"><a href="#我的需求" class="headerlink" title="我的需求"></a>我的需求</h3><p>在VSCode内进行debug操作,并允许我在其内置终端给程序输入.</p>
-<h3 id="解决方法"><a href="#解决方法" class="headerlink" title="解决方法"></a>解决方法</h3><ol start="0">
-<li><p>安装扩展CodeLLDB.</p>
-</li>
-<li><p>了解VSCode的编译(build)与调试(debug)配置方式</p>
-<p> VSCode在工作区的每个根文件夹下的.vscode文件夹放置build与debug配置文件.虽然不严谨,但可以把tasks.json当作build的配置文件,launch.json当作debug的配置文件.</p>
-</li>
-<li><p>在第一次build(快捷键shift+command+B)时会弹出列表选择编译命令,不明白的话就选第一个.第一次debug(快捷键F5)也是如此,会弹出列表选择调试方式,选择lldb launch.</p>
-</li>
-<li><p>在选择build或debug的选项后,都打开相应的配置文件.tasks.json的自动配置基本正确,lanuch.json中,需要将program项的值改为tasks.json中args数组中紧接字符串-o的字符串(类似于<code>${fileDirname}/${fileBasenameNoExtension}</code>)</p>
-<p> 这样,debug时就可以直接使用build生成的可执行文件了.</p>
-</li>
-<li><p>在launch的配置中可以加入一项</p>
-<pre><code>“preLaunchTask”: “(tasks.json里配置项label的值)”</code></pre><p> 这样,在每次debug前都会调用build来生成可执行文件,再debug.</p>
-</li>
-</ol>
-]]></content>
-      <tags>
-        <tag>VSCode</tag>
-        <tag>macOS</tag>
-        <tag>debug</tag>
-        <tag>lldb</tag>
-      </tags>
-  </entry>
+<search> 
+  
+  
+    
+    <entry>
+      <title>macOS下VScode的debug配置</title>
+      <link href="2020/10/macOS%E4%B8%8BVScode%E7%9A%84debug%E9%85%8D%E7%BD%AE/"/>
+      <url>2020/10/macOS%E4%B8%8BVScode%E7%9A%84debug%E9%85%8D%E7%BD%AE/</url>
+      
+        <content type="html"><![CDATA[<h3 id="一句话总结"><a href="#一句话总结" class="headerlink" title="一句话总结"></a>一句话总结</h3><p>在网上找了许多教程,到最后发现跟着vscode自动生成的配置+一个扩展就能实现我的需求.</p><h3 id="我的需求"><a href="#我的需求" class="headerlink" title="我的需求"></a>我的需求</h3><p>在VSCode内进行debug操作,并允许我在其内置终端给程序输入.</p><h3 id="解决方法"><a href="#解决方法" class="headerlink" title="解决方法"></a>解决方法</h3><ol start="0"><li><p>安装扩展CodeLLDB.</p></li><li><p>了解VSCode的编译(build)与调试(debug)配置方式</p><p> VSCode在工作区的每个根文件夹下的.vscode文件夹放置build与debug配置文件.虽然不严谨,但可以把tasks.json当作build的配置文件,launch.json当作debug的配置文件.</p></li><li><p>在第一次build(快捷键shift+command+B)时会弹出列表选择编译命令,不明白的话就选第一个.第一次debug(快捷键F5)也是如此,会弹出列表选择调试方式,选择lldb launch.</p></li><li><p>在选择build或debug的选项后,都打开相应的配置文件.tasks.json的自动配置基本正确,lanuch.json中,需要将program项的值改为tasks.json中args数组中紧接字符串-o的字符串(类似于<code>${fileDirname}/${fileBasenameNoExtension}</code>)</p><p> 这样,debug时就可以直接使用build生成的可执行文件了.</p></li><li><p>在launch的配置中可以加入一项</p><pre><code>“preLaunchTask”: “(tasks.json里配置项label的值)”</code></pre><p> 这样,在每次debug前都会调用build来生成可执行文件,再debug.</p></li></ol>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> VSCode </tag>
+            
+            <tag> macOS </tag>
+            
+            <tag> debug </tag>
+            
+            <tag> lldb </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Fusion 12 获取序列号</title>
+      <link href="2020/09/tryfusion12/"/>
+      <url>2020/09/tryfusion12/</url>
+      
+        <content type="html"><![CDATA[<p>在macOS上使用虚拟机软件，不外乎是Parallels，Fusion或者VisualBox。Paralles以流畅到极致的Windows体验著称，但虚拟的其他系统体验却相形见绌。VisualBox则被称为虚拟拖拉机，体验可见一斑（然而博主却在类似MuMu模拟器之类的Android虚拟机软件中看到VisualBox）。虚拟Linux系系统就选Fusion了。</p><p>碰巧的是，vmware在8月<a href="https://blogs.vmware.com/teamfusion/2020/08/announcing-fusion-12-and-workstation-16.html" target="_blank" rel="noopener">发布Fusion 12</a>，并更新它的授权体系，允许免费的个人使用。这意味这博主不再需要cracked version啦，可以名正言顺地白嫖啦。</p><p>PS:发布博文后，过了大概半个月才给出<a href="https://my.vmware.com/web/vmware/downloads/info/slug/desktop_end_user_computing/vmware_fusion/12_0" target="_blank" rel="noopener">下载地址</a>。</p><p>正文开始</p><h3 id="获取序列号"><a href="#获取序列号" class="headerlink" title="获取序列号"></a>获取序列号</h3><p>即便vmware放出个人版免费使用，也逃不了注册账户才能获得软件使用的序列号（安装的fusion 12有试用期，必须输入序列号才能解除试用）。值得注意的是，vmware的产品授权有着类似于AppStore的地区区别（国区美区这样的）。仔细来讲，一个账户可以拥有同时不同地区同一个软件的授权，地区看的是你登录vmware时的IP地址。</p><p>博主在这里被坑了一波，我默认的代理节点为香港，通过代理登录vmware账户，点击<code>上述</code>下载页面的<code>Get Your License Key</code>再点击<code>My VMware License Key</code>，会跳转到vSphere Hypervisor的授权界面。几番尝试，博主关掉代理重新登录（建议退出登录后清除cookie再登录）,重复上述操作，跳转到了404。看来不同地区优惠不一样啊，抱着这样的想法，博主挂上了美国的代理。</p><p>当然，在美国代理下上上述操作也不一定能拿到序列号，毕竟你并没有拿过序列号，My License Key中不一定会有。所幸博主在一个<a href="https://www.macrumors.com/2020/09/15/vmware-fusion-12-available/" target="_blank" rel="noopener">新闻页面</a>找到了Fusion 12的<a href="https://my.vmware.com/web/vmware/evalcenter?p=fusion-player-personal" target="_blank" rel="noopener">授权地址</a>（类似于上述的那个vSphere Hypervisor），点击Registrate，获得序列号（请全程美国代理）</p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> Fusion </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>helloworld*2</title>
+      <link href="2020/03/helloworld-2/"/>
+      <url>2020/03/helloworld-2/</url>
+      
+        <content type="html"><![CDATA[<h2 id="这是用来放笔记的Blog哦。"><a href="#这是用来放笔记的Blog哦。" class="headerlink" title="这是用来放笔记的Blog哦。"></a>这是用来放笔记的Blog哦。</h2>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Hello World</title>
+      <link href="2020/03/hello-world/"/>
+      <url>2020/03/hello-world/</url>
+      
+        <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html" target="_blank" rel="noopener">Deployment</a></p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+  
+  
 </search>
